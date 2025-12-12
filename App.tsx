@@ -11,8 +11,8 @@ import ResearchPage from './components/ChatMessage'; // Renaming conceptual Rese
 import PlatformPage from './components/PromptInput';
 import CompanyPage from './components/CompanyPage';
 import CareersPage from './components/CareersPage';
-import WorkplacePage from './components/workplacePage';
 import ParticleBackground from './components/ParticleBackground';
+import WorkplacePage from './components/WorkplacePage';
 
 const App: React.FC = () => {
     const [activePage, setActivePage] = useState<Page>('home');
