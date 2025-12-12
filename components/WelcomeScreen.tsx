@@ -68,7 +68,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
 
             {/* --- PARTNER LOGOS MARQUEE (DOUBLE) --- */}
             <div className="w-full border-y border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 py-10 mb-32 overflow-hidden">
-                <p className="text-center text-xs font-mono text-slate-400 mb-6 uppercase tracking-widest">Trusted by Industry Leaders</p>
+                <p className="text-center text-xs font-mono text-slate-400 mb-6 uppercase tracking-widest">Working with Industry Leaders</p>
 
                 {/* Strip 1: Partners */}
                 <div className="relative flex overflow-hidden w-full mb-8">
@@ -165,7 +165,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                     <div className="glass-card dark:bg-slate-800/50 dark:border-slate-700 rounded-3xl flex flex-col h-full hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
                         <div className="p-8 pb-4">
                             <div className="w-12 h-12 rounded-2xl bg-primary/5 flex items-center justify-center mb-6">
-                                <CubeTransparentIcon className="w-6 h-6 text-primary" />
+                                <CubeTransparentIcon className="w-6 h-6 text-accent" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Business Enterprise Solutions</h3>
                             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
