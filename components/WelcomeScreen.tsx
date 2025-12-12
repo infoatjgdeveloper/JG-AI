@@ -246,7 +246,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             { step: "04", title: "Scale", desc: "Deployment to enterprise cloud, followed by ongoing optimization, security monitoring, and scaling." }
                         ].map((item, i) => (
                             <div key={i} className="flex flex-col items-center text-center">
-                                <div className="w-16 h-16 rounded-full bg-white dark:bg-slate-800 border-4 border-slate-50 dark:border-slate-700 text-primary font-display font-bold text-xl flex items-center justify-center mb-6 shadow-sm relative z-10">
+                                <div className="w-16 h-16 rounded-full bg-white dark:bg-slate-800 border-4 border-slate-50 dark:border-slate-700 text-accent font-display font-bold text-xl flex items-center justify-center mb-6 shadow-sm relative z-10">
                                     {item.step}
                                 </div>
                                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">{item.title}</h3>
