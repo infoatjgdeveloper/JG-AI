@@ -13,7 +13,7 @@ import CompanyPage from './components/CompanyPage';
 import CareersPage from './components/CareersPage';
 import ParticleBackground from './components/ParticleBackground';
 import WorkplacePage from './components/WorkplacePage';
-
+import InvestorsPage from './components/InvestorPage';
 const App: React.FC = () => {
     const [activePage, setActivePage] = useState<Page>('home');
 
@@ -37,8 +37,8 @@ const App: React.FC = () => {
                 return <CompanyPage />;
             case 'careers':
                 return <CareersPage />;
-            case 'workplace':
-                return <WorkplacePage />;
+            case 'investors':
+                return <InvestorsPage />;
             default:
                 return <HomePage setActivePage={setActivePage} />;
         }
