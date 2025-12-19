@@ -22,7 +22,6 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                         <p className="text-sm leading-relaxed mb-8 max-w-xs">
                             Ahmedabad, Gujarat, India.<br/>
                             info@jgdeveloper.com<br/>
-                            +91 - XXX XXX XXXX
                         </p>
                         <div className="flex gap-4 text-white/50">
                              <a href="https://www.linkedin.com/company/jg-ai-research-developement/posts?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BZed5N0piSACTs6riz4SxZA%3D%3D" className="hover:text-accent transition-colors"><LinkedInIcon className="w-5 h-5" /></a>

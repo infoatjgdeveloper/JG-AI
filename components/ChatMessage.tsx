@@ -1,7 +1,7 @@
 
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
-import { DocumentTextIcon, BeakerIcon, UserGroupIcon, CpuChipIcon } from './Icons';
+import { DocumentTextIcon, BeakerIcon, UserGroupIcon, CpuChipIcon, AcademicCapIcon, SphereWireframe, ArrowUpRightIcon, RobotIcon } from './Icons';
 
 const ResearchPage: React.FC = () => {
     return (
@@ -84,7 +84,7 @@ const ResearchPage: React.FC = () => {
 
             {/* --- PUBLICATIONS --- */}
             <section className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-32 max-w-[90rem] mx-auto">
-                <div className="col-span-1 lg:col-span-2">
+                {/* <div className="col-span-1 lg:col-span-2">
                     <h2 className="font-display text-2xl text-primary mb-8 border-b border-slate-200 dark:border-slate-700 pb-4 dark:text-white">Publications & White-Papers</h2>
                     <div className="space-y-4">
                         {[
@@ -109,42 +109,84 @@ const ResearchPage: React.FC = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
                 {/* --- COLLABORATIONS --- */}
-                <div className="col-span-1">
-                    <div className="bg-primary text-white rounded-3xl p-8 h-full relative overflow-hidden">
-                        <div className="relative z-10">
-                            <h2 className="font-display text-xl mb-6 flex items-center gap-2">
-                                <UserGroupIcon className="w-5 h-5" /> Collaborations
-                            </h2>
-                            <p className="text-white/70 text-sm mb-8 leading-relaxed">
-                                We partner with leading universities and research institutions to push the boundaries of what AI can do.
-                            </p>
+              <div className="col-span-3">
+    <div className="bg-primary text-white rounded-3xl p-8 h-full relative overflow-hidden group">
+        <div className="relative z-10 flex flex-col h-full">
+            {/* Header */}
+            <div className="flex justify-between items-center mb-8">
+                <h2 className="font-display text-2xl flex items-center gap-3">
+                    <UserGroupIcon className="w-6 h-6 text-accent" /> Collaborations
+                </h2>
+                <div className="hidden sm:block">
+                    <SphereWireframe className="w-12 h-12 text-white/20 animate-pulse" />
+                </div>
+            </div>
 
-                            <div className="space-y-6 mb-12">
-                                <div className="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity">
-                                    <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center font-bold text-xs">GTU</div>
-                                    <span className="font-bold">Global Tech University</span>
-                                </div>
-                                <div className="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity">
-                                    <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center font-bold text-xs">ASL</div>
-                                    <span className="font-bold">AI Safety Lab</span>
-                                </div>
-                                <div className="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity">
-                                    <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center font-bold text-xs">NIST</div>
-                                    <span className="font-bold">Standards Institute</span>
-                                </div>
-                            </div>
+            <p className="text-white/60 text-sm mb-10 leading-relaxed max-w-xl">
+                We bridge the gap between academic innovation and industry scale. Our collaborative programs are designed to push the boundaries of AI while preparing the next generation of researchers.
+            </p>
 
-                            <button className="w-full py-3 border border-white/20 rounded-full text-sm font-bold hover:bg-white hover:text-primary transition-all">
-                                Partner with Us
-                            </button>
-                        </div>
-                        {/* Background decoration */}
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+            {/* Three Pillar Content Section */}
+            <div className="space-y-8 mb-12">
+                {/* 1. Industry Research */}
+                <div className="group/item flex gap-5">
+                    <div className="w-12 h-12 shrink-0 bg-accent/10 border border-accent/20 rounded-2xl flex items-center justify-center text-accent group-hover/item:bg-accent group-hover/item:text-primary transition-all duration-300">
+                        <BeakerIcon className="w-6 h-6" />
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-base mb-1">Industry Research Collaboration</h3>
+                        <p className="text-xs text-white/50 leading-relaxed">
+                            Partner with us to develop innovative AI and cloud solutions through joint R&D, prototype development, and applied research.
+                        </p>
                     </div>
                 </div>
+
+                {/* 2. Academic Collaborations */}
+                <div className="group/item flex gap-5">
+                    <div className="w-12 h-12 shrink-0 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-white/70 group-hover/item:border-accent/50 transition-all duration-300">
+                        <AcademicCapIcon className="w-6 h-6" />
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-base mb-1">Academic Collaborations</h3>
+                        <p className="text-xs text-white/50 leading-relaxed">
+                            We work with universities and research institutions to support joint research, innovation programs, and technology development initiatives.
+                        </p>
+                    </div>
+                </div>
+
+                {/* 3. Student Internships */}
+                <div className="group/item flex gap-5">
+                    <div className="w-12 h-12 shrink-0 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-white/70 group-hover/item:border-accent/50 transition-all duration-300">
+                        <RobotIcon className="w-6 h-6" />
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-base mb-1">Student Research Internships</h3>
+                        <p className="text-xs text-white/50 leading-relaxed">
+                            We provide research-oriented internships and training programs for university students, offering hands-on experience with real AI and software projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {/* Final CTA Area */}
+            <div className="mt-auto pt-8 border-t border-white/5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <button className="flex items-center justify-center gap-2 py-4 bg-white text-primary rounded-2xl text-sm font-bold hover:bg-accent transition-all">
+                    Partner with Us <ArrowUpRightIcon className="w-4 h-4" />
+                </button>
+                <button className="flex items-center justify-center gap-2 py-4 bg-white/5 border border-white/10 rounded-2xl text-sm font-bold hover:bg-white/10 transition-all text-white/80">
+                    Apply for Internship
+                </button>
+            </div>
+        </div>
+
+        {/* Subtle Brand Watermark Background */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+        <SphereWireframe className="absolute -bottom-10 -left-10 w-48 h-48 text-white/5 pointer-events-none" />
+    </div>
+</div>
             </section>
         </div>
     );

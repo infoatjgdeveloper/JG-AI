@@ -54,7 +54,7 @@ const CompanyPage: React.FC = () => {
             </section>
 
             {/* --- TEAM --- */}
-            <section className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32">
+            {/* <section className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32">
                 <h2 className="text-sm font-mono text-slate-400 mb-12 uppercase tracking-widest">Leadership Team</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm">
@@ -82,10 +82,10 @@ const CompanyPage: React.FC = () => {
                         </p>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* --- ADVISORY BOARD (New) --- */}
-            <section className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32">
+            {/* <section className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32">
                 <h2 className="text-sm font-mono text-slate-400 mb-12 uppercase tracking-widest">Advisory Board</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {[
@@ -101,7 +101,7 @@ const CompanyPage: React.FC = () => {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
             {/* --- GLOBAL FOOTPRINT (New) --- */}
             <section className="bg-slate-900 text-white py-24 mb-32 rounded-[3rem] mx-4 md:mx-8 lg:mx-16 relative overflow-hidden">
@@ -109,11 +109,10 @@ const CompanyPage: React.FC = () => {
                 <div className="relative z-10 max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl font-display font-bold mb-8">Global Footprint</h2>
                     <p className="text-slate-400 mb-12 leading-relaxed text-lg">
-                        While our heart is in Ahmedabad, our mind is global. We operate as a remote-first company with talent hubs in key time zones to ensure 24/7 coverage for our enterprise clients.
-                    </p>
+                       While our heart is in Ahmedabad, our mind is global. Today, we provide seamless solutions across 19+ countries through our remote-first model, leveraging talent hubs in key time zones to ensure 24/7 coverage for our enterprise clients. </p>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16">
                         <div className="text-center">
-                            <div className="text-2xl font-bold text-accent">Ahmedabad</div>
+                            <div className="text-2xl font-bold text-white">Ahmedabad</div>
                             <div className="text-xs text-slate-500 uppercase tracking-widest">Headquarters</div>
                         </div>
                         <div className="text-center">

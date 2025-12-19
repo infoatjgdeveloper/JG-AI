@@ -140,6 +140,13 @@ export const CpuChipIcon: React.FC<IconProps> = ({ className }) => (
     </svg>
 );
 
+export const AcademicCapIcon: React.FC<IconProps> = ({ className }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147L12 15l7.74-4.853a4.5 4.5 0 00-4.897-7.74l-2.843 1.777a4.5 4.5 0 00-4.898 7.74z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 11v4.5m14-4.5v4.5M12 15v5M8 20h8" />
+    </svg>
+);
+
 export const MapPinIcon: React.FC<IconProps> = ({ className }) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
