@@ -17,7 +17,7 @@ const InvestorsPage = () => {
             <section className="relative pt-32 pb-20 px-6 overflow-hidden">
                 <div className="max-w-7xl mx-auto relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold mb-6">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue/10 border border-accent/20 text-accent text-xs font-bold mb-6">
                             <span className="relative flex h-2 w-2">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
@@ -124,7 +124,7 @@ const InvestorsPage = () => {
 
             {/* Final Contact CTA */}
             <section className="py-20 px-6">
-                <div className="max-w-7xl mx-auto p-12 rounded-[3rem] bg-accent flex flex-col items-center text-center">
+                <div className="max-w-7xl mx-auto p-12 rounded-[3rem] bg-slate-50 flex flex-col items-center text-center">
                     <h2 className="text-primary text-4xl font-display font-bold mb-6">Ready to lead the revolution?</h2>
                     <p className="text-primary/70 max-w-xl mb-10 text-lg">
                         Speak directly with our founding team to discuss strategic partnership opportunities 
