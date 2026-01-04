@@ -220,25 +220,25 @@
 // export default PlatformPage;
 
 import React from 'react';
-import { 
-    StorefrontIcon, BoltIcon, UserGroupIcon, ServerStackIcon, 
-    ShieldLockIcon, CloudArrowUpIcon, CodeBracketIcon, RobotIcon 
+import {
+    StorefrontIcon, BoltIcon, UserGroupIcon, ServerStackIcon,
+    ShieldLockIcon, CloudArrowUpIcon, CodeBracketIcon, RobotIcon
 } from './Icons';
 
 const PlatformPage: React.FC = () => {
     const features = [
         {
-            icon: BoltIcon, 
+            icon: BoltIcon,
             title: "Smart Agent Listing",
             description: "List your proprietary AI models and agents with detailed performance metrics and competitive pricing.",
         },
         {
-            icon: StorefrontIcon, 
+            icon: StorefrontIcon,
             title: "Secure Transactions",
             description: "A trusted and secure escrow system for buying and selling AI agents, ensuring fair trades.",
         },
         {
-            icon: UserGroupIcon, 
+            icon: UserGroupIcon,
             title: "Global Ecosystem",
             description: "Connect with developers, researchers, and enterprises worldwide to monetize and acquire cutting-edge AI.",
         },
@@ -254,15 +254,21 @@ const PlatformPage: React.FC = () => {
                         The AI Agent Workplace
                     </h1>
                     <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 leading-relaxed">
-                        **Buy, sell, and trade** intelligent AI agents in the world's first open marketplace for proprietary machine learning models.
+                        Buy, sell, and trade intelligent AI agents in the world's first open marketplace for proprietary machine learning models.
                     </p>
                     <div className="mt-10 flex flex-wrap justify-center gap-4">
-                        <button className="bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-primary/90 transition-all shadow-xl hover:scale-105">
+                        <button
+                            onClick={() => {
+                                window.open('https://agenthub.jgdeveloper.com/', '_blank', 'noopener,noreferrer');
+                            }}
+                            className="bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-primary/90 transition-all shadow-xl hover:scale-105"
+                        >
                             Explore Marketplace
                         </button>
-                        <button className="border-2 border-slate-200 dark:border-slate-700 px-10 py-4 rounded-full text-lg font-bold dark:text-white hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
+
+                        {/* <button className="border-2 border-slate-200 dark:border-slate-700 px-10 py-4 rounded-full text-lg font-bold dark:text-white hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
                             List an Agent
-                        </button>
+                        </button> */}
                     </div>
                 </section>
 
@@ -270,7 +276,7 @@ const PlatformPage: React.FC = () => {
                 <section className="mb-40">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="aspect-video bg-slate-100 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 flex items-center justify-center shadow-inner relative overflow-hidden">
-                             {/* Marketplace Preview Placeholder */}
+                            {/* Marketplace Preview Placeholder */}
                             <div className="absolute inset-0 opacity-20 bg-grid-slate-900/[0.04] dark:bg-grid-white/[0.02]"></div>
                             <StorefrontIcon className="w-24 h-24 text-slate-300 dark:text-slate-700" />
                         </div>
@@ -316,7 +322,7 @@ const PlatformPage: React.FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                         {/* Diagram */}
                         <div className="lg:col-span-7 bg-slate-50 dark:bg-slate-900/50 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 p-10">
-                            
+
                             <div className="relative space-y-6 max-w-md mx-auto">
                                 <div className="flex justify-center gap-4">
                                     <div className="px-5 py-2 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 font-mono text-[10px] dark:text-slate-400">Client Apps</div>
@@ -374,7 +380,7 @@ const PlatformPage: React.FC = () => {
                 </section>
 
                 {/* FINAL CTA: CONVERGING BOTH */}
-                <section className="text-center bg-primary dark:bg-indigo-950 rounded-[3.5rem] p-16 text-white shadow-2xl relative overflow-hidden">
+                {/* <section className="text-center bg-primary dark:bg-indigo-950 rounded-[3.5rem] p-16 text-white shadow-2xl relative overflow-hidden">
                     <div className="relative z-10">
                         <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Ready to scale with AI?</h2>
                         <p className="text-primary-foreground/80 text-xl mb-10 max-w-2xl mx-auto">
@@ -389,7 +395,7 @@ const PlatformPage: React.FC = () => {
                             </button>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </div>
         </div>
     );

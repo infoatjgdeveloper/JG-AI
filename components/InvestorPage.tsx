@@ -83,7 +83,7 @@ const InvestorsPage = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {/* Primary Pitch Deck Card */}
+                        
                         <div className="col-span-1 md:col-span-2 p-8 bg-primary text-white rounded-3xl border border-white/10 relative overflow-hidden group shadow-2xl">
                             <div className="relative z-10">
                                 <DocumentTextIcon className="w-12 h-12 text-accent mb-6" />
@@ -103,9 +103,9 @@ const InvestorsPage = () => {
                         {/* Other Documents - Theme Aware */}
                         <div className="space-y-4">
                             {[
-                                { title: 'Financial Statements', size: '2.4 MB' },
-                                { title: 'Legal Documentation', size: '4.1 MB' },
-                                { title: 'Market Analysis Report', size: '1.8 MB' },
+                                // { title: 'Financial Statements', size: '2.4 MB' },
+                                // { title: 'Legal Documentation', size: '4.1 MB' },
+                                // { title: 'Market Analysis Report', size: '1.8 MB' },
                             ].map((doc, i) => (
                                 <div 
                                     key={i} 
@@ -126,7 +126,7 @@ const InvestorsPage = () => {
             </section>
 
             {/* Final Contact CTA - Theme Aware Colors */}
-            <section className="py-20 px-6">
+            {/* <section className="py-20 px-6">
                 <div className="max-w-7xl mx-auto p-12 rounded-[3rem] bg-accent text-white flex flex-col items-center text-center">
                     <h2 className="text-4xl font-display font-bold mb-6">Ready to lead the revolution?</h2>
                     <p className="text-white/80 max-w-xl mb-10 text-lg">
@@ -136,7 +136,7 @@ const InvestorsPage = () => {
                         Contact IR Team
                     </button>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 };

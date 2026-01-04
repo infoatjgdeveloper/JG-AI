@@ -37,7 +37,7 @@ const WorkplacePage: React.FC = () => {
                         The AI Agent Marketplace
                     </h1>
                     <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-                        **Buy, sell, and trade** intelligent AI agents in the world's first open workplace for proprietary machine learning models.
+                    Buy, sell, and trade intelligent AI agents in the world's first open workplace for proprietary machine learning models.
                     </p>
                     <div className="mt-8">
                         <button className="bg-primary text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-primary/90 transition-colors shadow-lg">
