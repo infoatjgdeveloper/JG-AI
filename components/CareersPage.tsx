@@ -16,7 +16,7 @@ const CareersPage: React.FC = () => {
                 </div>
 
                 {/* Life at JG (New) */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-32 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-1 gap-16 mb-32 items-center">
                     <div>
                         <h2 className="text-3xl font-display font-bold text-primary dark:text-white mb-6">Life at JG AI</h2>
                         <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
@@ -26,10 +26,10 @@ const CareersPage: React.FC = () => {
                             Whether you are in our Ahmedabad HQ or working remotely from London, you are part of a single, cohesive team pushing the boundaries of what is possible.
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 gap-4">
+                    {/* <div className="grid grid-cols-2 gap-4">
                         <div className="aspect-square bg-slate-100 dark:bg-slate-800 rounded-2xl"></div>
                         <div className="aspect-square bg-slate-200 dark:bg-slate-700 rounded-2xl translate-y-8"></div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Benefits */}
@@ -108,7 +108,7 @@ const CareersPage: React.FC = () => {
                 </div>
 
                 {/* General Application */}
-                <div className="text-center bg-slate-900 dark:bg-black rounded-[3rem] p-16 text-white">
+                {/* <div className="text-center bg-slate-900 dark:bg-black rounded-[3rem] p-16 text-white">
                     <h2 className="text-3xl font-display mb-4">Don't see the right role?</h2>
                     <p className="text-slate-400 mb-8">Send us your resume and a short note explaining your interest.</p>
                     <form className="max-w-md mx-auto space-y-4 text-left">
@@ -118,7 +118,7 @@ const CareersPage: React.FC = () => {
                             Send Resume
                         </button>
                     </form>
-                </div>
+                </div> */}
             </div>
         </div>
     );
