@@ -39,7 +39,13 @@ const InvestorsPage = () => {
                             <a href="#documents" className="px-8 py-4 bg-foreground text-background rounded-full font-bold hover:bg-accent hover:text-white transition-all flex items-center gap-2">
                                 Access Pitch Deck <ArrowRightIcon className="w-4 h-4" />
                             </a>
-                            <button className="px-8 py-4 bg-muted border border-border rounded-full font-bold hover:bg-accent/10 transition-all">
+                            <button  onClick={() => {
+    
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
+      '_blank'
+    );
+  }}className="px-8 py-4 bg-muted border border-border rounded-full font-bold hover:bg-accent/10 transition-all">
                                 Schedule Briefing
                             </button>
                         </div>
