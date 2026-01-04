@@ -65,7 +65,13 @@ const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => {
                         <ThemeToggle />
                     </div>
 
-                    <button className="hidden lg:block mr-1 px-5 py-1.5 bg-primary text-white text-[13px] font-bold rounded-full hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">
+                    <button  onClick={() => {
+    
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
+      '_blank'
+    );
+  }}className="hidden lg:block mr-1 px-5 py-1.5 bg-primary text-white text-[13px] font-bold rounded-full hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">
                         Get a demo
                     </button>
 
@@ -136,7 +142,13 @@ const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => {
                     </div>
 
                     <div className="px-4 pt-4">
-                        <button className="w-full px-6 py-3 bg-primary text-white text-sm font-bold rounded-2xl hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">
+                        <button  onClick={() => {
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
+      '_blank'
+    );
+  }} 
+  className="w-full px-6 py-3 bg-primary text-white text-sm font-bold rounded-2xl hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">
                             Get a demo
                         </button>
                     </div>

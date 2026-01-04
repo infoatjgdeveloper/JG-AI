@@ -28,7 +28,12 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         </p>
 
                         <div className="flex flex-wrap gap-4">
-                            <button onClick={() => setActivePage('company')} className="bg-primary text-white px-8 py-4 rounded-full font-bold text-sm transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 flex items-center gap-2">
+                            <button onClick={() => {
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
+      '_blank'
+    );
+  }} className="bg-primary text-white px-8 py-4 rounded-full font-bold text-sm transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 flex items-center gap-2">
                                 Get a demo <ArrowRightIcon className="w-4 h-4" />
                             </button>
                             <button onClick={() => setActivePage('research')} className="bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-full font-bold text-sm transition-all hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-slate-300 dark:hover:border-slate-600 shadow-sm">

@@ -99,9 +99,18 @@ const CareersPage: React.FC = () => {
                                 <div className="text-right">
                                     <p className="text-slate-400 text-xs font-mono">{job.loc}</p>
                                 </div>
-                                <button className="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-primary/90 transition-colors">
+                                {/* <button className="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-primary/90 transition-colors">
                                     Apply Now
-                                </button>
+                                </button> */}
+                                <a
+  href="https://docs.google.com/forms/d/e/1FAIpQLScvzvMosFJalCzT2Iw-xTVaOVe3gJLmg3Xsne4meVm9cpMPbA/viewform?usp=dialog"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-primary text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-primary/90 transition-colors"
+>
+  Apply Now
+</a>
+
                             </div>
                         </div>
                     ))}
