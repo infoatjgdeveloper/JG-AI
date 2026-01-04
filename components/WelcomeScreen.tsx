@@ -557,7 +557,12 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                 <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
                     <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-8">Ready to transform your business with AI?</h2>
                     <div className="flex justify-center">
-                        <button onClick={() => setActivePage('company')} className="bg-accent text-white px-10 py-4 rounded-full font-bold text-sm hover:bg-accent/90 transition-colors shadow-xl">
+                        <button onClick={() => {
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
+      '_blank'
+    );
+  }}  className="bg-accent text-white px-10 py-4 rounded-full font-bold text-sm hover:bg-accent/90 transition-colors shadow-xl">
                             Contact us
                         </button>
                     </div>
