@@ -1,6 +1,9 @@
 
 import React from 'react';
 import { MapPinIcon, UserCircleIcon } from './Icons';
+import WorldMap from './WorldMap';
+import RegionCard from './RegionCard';
+import { REGIONAL_PARTNERS } from '../data/regionalPartners';
 
 const CompanyPage: React.FC = () => {
     return (
@@ -103,31 +106,30 @@ const CompanyPage: React.FC = () => {
                 </div>
             </section> */}
 
-            {/* --- GLOBAL FOOTPRINT (New) --- */}
-            <section className="bg-slate-900 text-white py-24 mb-32 rounded-[3rem] mx-4 md:mx-8 lg:mx-16 relative overflow-hidden">
-                <div className="absolute inset-0 opacity-20 bg-[url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg')] bg-cover bg-center bg-no-repeat pointer-events-none"></div>
-                <div className="relative z-10 max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl font-display font-bold mb-8">Global Footprint</h2>
-                    <p className="text-slate-400 mb-12 leading-relaxed text-lg">
-                       While our heart is in Ahmedabad, our mind is global. Today, we provide seamless solutions across 19+ countries through our remote-first model, leveraging talent hubs in key time zones to ensure 24/7 coverage for our enterprise clients. </p>
-                    <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-                        <div className="text-center">
-                            <div className="text-2xl font-bold text-white">Ahmedabad</div>
-                            <div className="text-xs text-slate-500 uppercase tracking-widest">Headquarters</div>
+            {/* --- GLOBAL OPERATIONAL NETWORK --- */}
+            <section className="bg-slate-900 text-white py-24 mb-16 rounded-[3rem] mx-4 md:mx-8 lg:mx-16 relative overflow-hidden">
+                <div className="absolute inset-0 opacity-10">
+                    <WorldMap />
+                </div>
+
+                <div className="relative z-10">
+                    {/* Global Operational Network Header */}
+                    <section className="container mx-auto px-6 relative mb-16">
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl font-bold text-white mb-4">Global Operational Network</h2>
+                            <p className="text-slate-500 uppercase tracking-widest text-xs">Decentralized Service Delivery through Centralized Governance</p>
                         </div>
-                        <div className="text-center">
-                            <div className="text-2xl font-bold text-white">London</div>
-                            <div className="text-xs text-slate-500 uppercase tracking-widest">Sales Hub</div>
+                        <WorldMap />
+                    </section>
+
+                    {/* Regional Partners */}
+                    <section className="container mx-auto px-6">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                            {REGIONAL_PARTNERS.map((partner) => (
+                                <RegionCard key={partner.id} partner={partner} />
+                            ))}
                         </div>
-                        <div className="text-center">
-                            <div className="text-2xl font-bold text-white">New York</div>
-                            <div className="text-xs text-slate-500 uppercase tracking-widest">Solutions Hub</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-2xl font-bold text-white">Singapore</div>
-                            <div className="text-xs text-slate-500 uppercase tracking-widest">APAC Support</div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </section>
 
