@@ -3,7 +3,7 @@ import React from 'react';
 import { MapPinIcon, UserCircleIcon } from './Icons';
 import WorldMap from './WorldMap';
 import RegionCard from './RegionCard';
-import { REGIONAL_PARTNERS } from '../data/regionalPartners';
+import { REGIONAL_CARDS, REGIONAL_PARTNERS } from '../data/regionalPartners';
 
 const CompanyPage: React.FC = () => {
     return (
@@ -125,7 +125,7 @@ const CompanyPage: React.FC = () => {
                     {/* Regional Partners */}
                     <section className="container mx-auto px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-7xl mx-auto">
-                            {REGIONAL_PARTNERS.map((partner) => (
+                            {REGIONAL_CARDS.map((partner) => (
                                 <RegionCard key={partner.id} partner={partner} />
                             ))}
                         </div>

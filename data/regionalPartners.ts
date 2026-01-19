@@ -40,6 +40,44 @@ export const REGIONAL_PARTNERS: RegionalPartner[] = [
     }
 ];
 
+export const REGIONAL_CARDS: RegionalPartner[] = [
+    {
+        id: 'asia',
+        region: 'ASIA',
+        partnerName: 'JG AI (Headquarters)',
+        description: 'The global central governance and strategic core. Our headquarters in Ahmedabad, Gujarat, oversees all intellectual property, core AI models, and sets the standards for our global ecosystem.',
+        coordinates: { x: 72, y: 45 }
+    },
+    {
+        id: 'na',
+        region: 'North America',
+        partnerName: 'BRJU Infosec Inc',
+        description: 'Authorized regional operating partner for North America, providing secure and compliant AI infrastructure within the JG AI global ecosystem.',
+        coordinates: { x: 18, y: 35 }
+    },
+    {
+        id: 'eu',
+        region: 'EU (including UK)',
+        partnerName: 'IA7 Global',
+        description: 'Authorized regional operating partner serving the EU and UK, delivering services compliant with GDPR and regional standards.',
+        coordinates: { x: 47, y: 25 }
+    },
+    // {
+    //     id: 'me',
+    //     region: 'Middle East (GCC)',
+    //     partnerName: 'Shinu Enterprise',
+    //     description: 'Driving enterprise AI and cybersecurity initiatives across the GCC region as an authorized regional operating partner.',
+    //     coordinates: { x: 58, y: 42 }
+    // },
+    // {
+    //     id: 'oc',
+    //     region: 'Oceania',
+    //     partnerName: 'SG IT Services & Consultacy',
+    //     description: 'Providing regional support and implementation of JG AI technologies across Australia and New Zealand.',
+    //     coordinates: { x: 85, y: 72 }
+    // }
+];
+
 export const JOURNEY: TimelineEvent[] = [
     {
         year: '2020',
