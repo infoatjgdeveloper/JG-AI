@@ -41,10 +41,10 @@ const CompanyPage: React.FC = () => {
                 <div className="relative border-l-2 border-slate-200 dark:border-slate-700 ml-4 md:ml-8 space-y-12">
                     {[
                         { year: "2020", title: "Inception", desc: "Founded in Ahmedabad with a core team of 3 engineers focusing on Cloud Solutions." },
-                        { year: "2021", title: "Expansion", desc: "Launched Enterprise Solutions division. Secured first 10 major clients in Finance." },
+                        { year: "2021", title: "Expansion", desc: "Launched Enterprise Solutions division." },
                         { year: "2023", title: "The AI Pivot", desc: "Established AI Research Lab. Began development of proprietary Agentic Framework." },
-                        { year: "2024", title: "Platform Launch", desc: "Released the JG AI Agents Marketplace (Beta) and secured Series A funding." },
-                        { year: "2025", title: "Global Scale", desc: "Opening remote hubs in London & NYC. 10,000+ Agents deployed." }
+                        { year: "2024", title: "Platform Launch", desc: "Released the JG AI Agents Marketplace (Beta)" },
+                        { year: "2025", title: "Global Scale", desc: "Opening remote hubs in London & NYC. 10,000+ Agents deployed. Authorised regional partnerships across globe." }
                     ].map((item, i) => (
                         <div key={i} className="relative pl-8 md:pl-12">
                             <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white dark:bg-slate-900 border-4 border-accent"></div>

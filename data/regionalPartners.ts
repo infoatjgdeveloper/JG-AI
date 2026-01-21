@@ -24,20 +24,20 @@ export const REGIONAL_PARTNERS: RegionalPartner[] = [
         description: 'Authorized regional operating partner serving the EU and UK, delivering services compliant with GDPR and regional standards.',
         coordinates: { x: 47, y: 25 }
     },
-    {
-        id: 'me',
-        region: 'Middle East (GCC)',
-        partnerName: 'Shinu Enterprise',
-        description: 'Driving enterprise AI and cybersecurity initiatives across the GCC region as an authorized regional operating partner.',
-        coordinates: { x: 58, y: 42 }
-    },
-    {
-        id: 'oc',
-        region: 'Oceania',
-        partnerName: 'SG IT Services & Consultacy',
-        description: 'Providing regional support and implementation of JG AI technologies across Australia and New Zealand.',
-        coordinates: { x: 85, y: 72 }
-    }
+    // {
+    //     id: 'me',
+    //     region: 'Middle East (GCC)',
+    //     partnerName: 'Shinu Enterprise',
+    //     description: 'Driving enterprise AI and cybersecurity initiatives across the GCC region as an authorized regional operating partner.',
+    //     coordinates: { x: 58, y: 42 }
+    // },
+    // {
+    //     id: 'oc',
+    //     region: 'Oceania',
+    //     partnerName: 'SG IT Services & Consultacy',
+    //     description: 'Providing regional support and implementation of JG AI technologies across Australia and New Zealand.',
+    //     coordinates: { x: 85, y: 72 }
+    // }
 ];
 
 export const REGIONAL_CARDS: RegionalPartner[] = [
