@@ -37,6 +37,7 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                             <li><button onClick={() => setActivePage('research')} className="hover:text-accent transition-colors">Research</button></li>
                             <li><button onClick={() => setActivePage('api')} className="hover:text-accent transition-colors">Platform</button></li>
                             <li><button onClick={() => setActivePage('company')} className="hover:text-accent transition-colors">Company</button></li>
+                            <li><button onClick={() => setActivePage('portfolio')} className="hover:text-accent transition-colors">Portfolio</button></li>
                             <li><button onClick={() => setActivePage('careers')} className="hover:text-accent transition-colors">Career</button></li>
                         </ul>
                     </div>

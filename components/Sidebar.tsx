@@ -18,6 +18,7 @@ const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => {
         { id: 'company', label: 'Company' },
         { id: 'careers', label: 'Career' },
         { id: 'investors', label: 'Investor' },
+        { id: 'portfolio', label: 'Portfolio' },
     ];
 
     const handleNavClick = (page: Page) => {
