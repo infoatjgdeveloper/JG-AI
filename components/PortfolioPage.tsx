@@ -71,17 +71,17 @@ const PortfolioPage: React.FC = () => {
                     Trusted by clients across 37+ countries. We build world-class technology solutions — from AI-powered platforms to bulletproof cybersecurity.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 pt-4">
-                    <a 
-                        href="https://tropical-nigella-509.notion.site/Company-Portfolio-336add439485811282d4ec990ef2a09d?pvs=73" 
-                        target="_blank" 
+                    <a
+                        href="https://tropical-nigella-509.notion.site/Company-Portfolio-336add439485811282d4ec990ef2a09d?pvs=73"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="px-8 py-3 bg-primary text-white font-bold rounded-full hover:scale-105 transition-transform shadow-lg shadow-primary/25"
                     >
                         View Full Portfolio Book
                     </a>
-                    <a 
-                        href="https://calendly.com/infoatjgdeveloper/30min" 
-                        target="_blank" 
+                    <a
+                        href="https://calendly.com/infoatjgdeveloper/30min"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="px-8 py-3 border-2 border-primary text-primary dark:text-blue-400 dark:border-blue-400 font-bold rounded-full hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
                     >
@@ -111,8 +111,8 @@ const PortfolioPage: React.FC = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {services.map((service, idx) => (
-                        <a 
-                            key={idx} 
+                        <a
+                            key={idx}
                             href={service.link}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -142,7 +142,7 @@ const PortfolioPage: React.FC = () => {
                             <p className="text-slate-600 dark:text-slate-400 max-w-lg uppercase tracking-tight font-medium">We use the world's most advanced tools to build bulletproof, future-ready solutions.</p>
                         </div>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-12">
                         {techArsenal.map((tech, idx) => (
                             <div key={idx} className="space-y-3 group">
@@ -211,7 +211,7 @@ const PortfolioPage: React.FC = () => {
                         </div>
                         <div className="relative group">
                             <pre className="bg-slate-50 dark:bg-slate-800 p-8 rounded-3xl text-sm text-slate-700 dark:text-slate-300 font-mono overflow-x-auto border border-slate-200 dark:border-slate-700">
-{`Hi JG AI R&D Team,
+                                {`Hi JG AI R&D Team,
 
 Service Needed: [Web / Software / Cloud / AI / Cybersecurity]
 Project Overview: 
@@ -221,7 +221,7 @@ Company / Name:
 Country: 
 Contact Number: `}
                             </pre>
-                            <button 
+                            <button
                                 onClick={() => {
                                     navigator.clipboard.writeText(`Hi JG AI R&D Team,
 
@@ -256,9 +256,9 @@ Contact Number: `);
                                 <a href="http://jgai.jgdeveloper.com" className="text-lg font-bold hover:text-accent transition-colors">jgai.jgdeveloper.com</a>
                             </div>
                         </div>
-                        <a 
-                            href="https://calendly.com/infoatjgdeveloper/30min" 
-                            target="_blank" 
+                        <a
+                            href="https://calendly.com/infoatjgdeveloper/30min"
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="w-full py-4 bg-accent text-slate-900 font-bold rounded-2xl text-center hover:scale-[1.02] transition-transform shadow-lg shadow-accent/20 uppercase tracking-tight underline"
                         >
@@ -269,7 +269,7 @@ Contact Number: `);
             </section>
 
             <footer className="text-center text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-[0.2em] pb-10">
-                © 2025 JG AI Research & Development Pvt Ltd · Serving 37+ Countries
+                © 2026 JG AI Research & Development Pvt Ltd · Serving 37+ Countries
             </footer>
         </div>
     );
