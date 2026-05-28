@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                         </p>
                         <address className="not-italic text-sm leading-relaxed mb-6 text-slate-400">
                             Ahmedabad, Gujarat, India<br />
-                            <a href="mailto:hello@jgdeveloper.com" className="hover:text-accent transition-colors">hello@jgdeveloper.com</a>
+                            <a href="mailto:info@jgdeveloper.com" className="hover:text-accent transition-colors">info@jgdeveloper.com</a>
                         </address>
                         <div className="flex gap-4 text-white/50">
                             <a
@@ -71,8 +71,8 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                             <li><button onClick={() => scrollTo('about')} className="hover:text-accent transition-colors">About JGAI</button></li>
                             <li><button onClick={() => scrollTo('network')} className="hover:text-accent transition-colors">Global Network</button></li>
                             <li><button onClick={() => setActivePage('careers')} className="hover:text-accent transition-colors">Careers at JGAI</button></li>
-                            <li><a href="mailto:hello@jgdeveloper.com?subject=Press%20%26%20Media%20%E2%80%94%20JGAI" className="hover:text-accent transition-colors">Press &amp; Media</a></li>
-                            <li><a href="mailto:hello@jgdeveloper.com?subject=ARC%20Partnership%20Application%20%E2%80%94%20JGAI" className="hover:text-accent transition-colors">Become an ARC Partner</a></li>
+                            <li><a href="mailto:info@jgdeveloper.com?subject=Press%20%26%20Media%20%E2%80%94%20JGAI" className="hover:text-accent transition-colors">Press &amp; Media</a></li>
+                            <li><a href="mailto:info@jgdeveloper.com?subject=ARC%20Partnership%20Application%20%E2%80%94%20JGAI" className="hover:text-accent transition-colors">Become an ARC Partner</a></li>
                         </ul>
                     </nav>
 
@@ -90,9 +90,9 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                     <nav aria-label="Get in touch">
                         <h4 className="text-white font-mono text-xs font-bold mb-6 uppercase tracking-wider">Get in Touch</h4>
                         <ul className="space-y-3 text-sm" role="list">
-                            <li><a href="mailto:hello@jgdeveloper.com" className="hover:text-accent transition-colors">hello@jgdeveloper.com</a></li>
+                            <li><a href="mailto:info@jgdeveloper.com" className="hover:text-accent transition-colors">info@jgdeveloper.com</a></li>
                             <li><button onClick={() => scrollTo('demo')} className="hover:text-accent transition-colors">Try Live AI Demo</button></li>
-                            <li><a href="mailto:hello@jgdeveloper.com?subject=Free%20Strategy%20Call%20%E2%80%94%20JGAI" className="hover:text-accent transition-colors">Book a Free Strategy Call</a></li>
+                            <li><a href="mailto:info@jgdeveloper.com?subject=Free%20Strategy%20Call%20%E2%80%94%20JGAI" className="hover:text-accent transition-colors">Book a Free Strategy Call</a></li>
                             <li><a href="#" className="hover:text-accent transition-colors">Privacy Policy</a></li>
                             <li><a href="#" className="hover:text-accent transition-colors">Terms of Service</a></li>
                         </ul>

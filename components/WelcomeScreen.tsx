@@ -40,7 +40,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
         },
         {
             q: "How much does JGAI's AI chatbot cost?",
-            a: 'The AI Chatbot subscription starts at $199 per month and includes custom training on your data, multi-channel deployment (website + WhatsApp + app), 10+ language support, a real-time analytics dashboard, human agent handoff, and monthly model retraining. Business websites start at $499 one-time. Enterprise Suite pricing is custom-scoped — email hello@jgdeveloper.com for a quote.',
+            a: 'The AI Chatbot subscription starts at $199 per month and includes custom training on your data, multi-channel deployment (website + WhatsApp + app), 10+ language support, a real-time analytics dashboard, human agent handoff, and monthly model retraining. Business websites start at $499 one-time. Enterprise Suite pricing is custom-scoped — email info@jgdeveloper.com for a quote.',
         },
         {
             q: 'What separates JGAI from other AI development companies?',
@@ -48,7 +48,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
         },
         {
             q: 'How do I become an Authorized Regional Center (ARC) for JGAI?',
-            a: 'The JGAI ARC program is open to established IT companies operating in markets not yet fully covered by the JGAI Group. As an ARC, you receive full access to JGAI’s complete product and service portfolio, the right to co-brand and market as a JGAI Authorized Regional Center, dedicated technical support, and a revenue-sharing structure. Email hello@jgdeveloper.com with your company name, region, size, and a brief description of your client base.',
+            a: 'The JGAI ARC program is open to established IT companies operating in markets not yet fully covered by the JGAI Group. As an ARC, you receive full access to JGAI’s complete product and service portfolio, the right to co-brand and market as a JGAI Authorized Regional Center, dedicated technical support, and a revenue-sharing structure. Email info@jgdeveloper.com with your company name, region, size, and a brief description of your client base.',
         },
     ];
 
@@ -384,7 +384,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         </div>
                         <div className="text-center md:text-right">
                             <a
-                                href="mailto:hello@jgdeveloper.com?subject=ARC%20Partnership%20Application%20%E2%80%94%20JGAI"
+                                href="mailto:info@jgdeveloper.com?subject=ARC%20Partnership%20Application%20%E2%80%94%20JGAI"
                                 className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-accent/90 transition-all"
                             >
                                 Apply Now <ArrowRightIcon className="w-4 h-4" />
@@ -596,7 +596,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             ))}
                         </ul>
                         <a
-                            href="mailto:hello@jgdeveloper.com?subject=Business%20Website%20Package%20%E2%80%94%20JGAI"
+                            href="mailto:info@jgdeveloper.com?subject=Business%20Website%20Package%20%E2%80%94%20JGAI"
                             className="inline-flex items-center justify-center gap-2 bg-slate-900 dark:bg-white dark:text-slate-900 text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-slate-800 transition-colors"
                         >
                             Request a Website <ArrowRightIcon className="w-4 h-4" />
@@ -671,7 +671,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             ))}
                         </ul>
                         <a
-                            href="mailto:hello@jgdeveloper.com?subject=Enterprise%20AI%20Suite%20%E2%80%94%20Strategy%20Call"
+                            href="mailto:info@jgdeveloper.com?subject=Enterprise%20AI%20Suite%20%E2%80%94%20Strategy%20Call"
                             className="inline-flex items-center justify-center gap-2 bg-slate-900 dark:bg-white dark:text-slate-900 text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-slate-800 transition-colors"
                         >
                             Book a Strategy Call <ArrowRightIcon className="w-4 h-4" />
@@ -717,7 +717,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                                 Get Your AI Chatbot
                             </button>
                             <a
-                                href="mailto:hello@jgdeveloper.com?subject=Chatbot%20Demo%20Call%20%E2%80%94%20JGAI"
+                                href="mailto:info@jgdeveloper.com?subject=Chatbot%20Demo%20Call%20%E2%80%94%20JGAI"
                                 className="bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 px-6 py-3 rounded-full font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
                             >
                                 Book a Demo Call
@@ -765,7 +765,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
                     {[
-                        { region: 'South Asia', countries: ['India', 'Pakistan', 'Bangladesh', 'Sri Lanka', 'Nepal', 'Bhutan'] },
+                        { region: 'South Asia', countries: ['India', 'Nepal', 'Bhutan'] },
                         { region: 'The Americas', countries: ['United States', 'Canada', 'Mexico', 'Colombia', 'Brazil', 'Argentina'] },
                         { region: 'Europe & UK', countries: ['United Kingdom', 'Germany', 'France', 'Netherlands', 'Spain', 'Poland', 'Italy'] },
                         { region: 'Middle East', countries: ['United Arab Emirates', 'Saudi Arabia', 'Qatar', 'Kuwait', 'Bahrain', 'Oman'] },
@@ -913,7 +913,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             Experience the AI Demo
                         </button>
                         <a
-                            href="mailto:hello@jgdeveloper.com?subject=JGAI%20Strategy%20Call%20Request"
+                            href="mailto:info@jgdeveloper.com?subject=JGAI%20Strategy%20Call%20Request"
                             className="bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-full font-bold text-sm hover:bg-white/20 transition-colors"
                         >
                             Book a Free Strategy Call
