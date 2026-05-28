@@ -64,7 +64,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         <div className="inline-flex items-center gap-2 border border-accent/30 bg-accent/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
                             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" aria-hidden="true"></div>
                             <span className="font-mono text-xs text-primary dark:text-slate-200 tracking-wide font-bold uppercase">
-                                Ranked #1 AI R&amp;D Company · 37+ Countries · ISO 27001 Certified
+                                37+ Countries · ISO 27001 Certified
                             </span>
                         </div>
 
