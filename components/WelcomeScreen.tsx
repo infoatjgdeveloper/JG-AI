@@ -64,7 +64,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         <div className="inline-flex items-center gap-2 border border-accent/30 bg-accent/5 backdrop-blur-sm rounded-full px-4 py-1.5 mb-8">
                             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" aria-hidden="true"></div>
                             <span className="font-mono text-xs text-primary dark:text-slate-200 tracking-wide font-bold uppercase">
-                                37+ Countries · ISO 27001 Certified
+                                37+ Countries
                             </span>
                         </div>
 
@@ -77,7 +77,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         </h1>
 
                         <p className="text-xl text-slate-600 dark:text-slate-300 max-w-xl mb-10 leading-relaxed">
-                            JGAI engineers the intelligent systems that give enterprises an unfair competitive edge. From <strong className="text-primary dark:text-white">custom LLMs and AI chatbots deployed in 48 hours</strong>, to airtight cybersecurity and elite web platforms — we operate across 37+ countries through 3 regional entities, delivering results that permanently change what&apos;s possible for your business.
+                            JGAI engineers the intelligent systems that give enterprises an unfair competitive edge. From <strong className="text-primary dark:text-white">custom LLMs and AI chatbots deployed in 48 hours</strong>, to airtight cybersecurity and elite web platforms.we operate across 37+ countries through 3 regional entities, delivering results that permanently change what&apos;s possible for your business.
                         </p>
 
                         <div className="flex flex-wrap gap-4">
@@ -160,8 +160,6 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         <span>Enterprise AI Chatbots — Live in 48h</span>
                         <span>·</span>
                         <span>Cybersecurity &amp; InfoSec</span>
-                        <span>·</span>
-                        <span>ISO 27001 Certified</span>
                         <span>·</span>
                         <span>Web &amp; App Development</span>
                         <span>·</span>

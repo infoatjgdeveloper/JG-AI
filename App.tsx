@@ -15,6 +15,7 @@ import ParticleBackground from './components/ParticleBackground';
 import WorkplacePage from './components/WorkplacePage';
 import InvestorsPage from './components/InvestorPage';
 import PortfolioPage from './components/PortfolioPage';
+import ChatWidget from './components/ChatWidget';
 
 const App: React.FC = () => {
     const [activePage, setActivePage] = useState<Page>('home');
@@ -59,6 +60,7 @@ const App: React.FC = () => {
                     </main>
                     <Footer setActivePage={setActivePage} />
                 </div>
+                <ChatWidget />
             </div>
         </ThemeProvider>
     );
