@@ -209,7 +209,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                  ===================================================== */}
             <section aria-labelledby="awards-heading" className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32">
                 <h2 id="awards-heading" className="sr-only">Awards &amp; Certifications</h2>
-                <div className="bg-slate-900 dark:bg-slate-800 rounded-3xl grid grid-cols-2 md:grid-cols-5 gap-px overflow-hidden border border-slate-800">
+                {/* <div className="bg-slate-900 dark:bg-slate-800 rounded-3xl grid grid-cols-2 md:grid-cols-5 gap-px overflow-hidden border border-slate-800">
                     {[
                         { icon: '🏆', t: 'Top AI Company 2024', s: 'Global Tech Review' },
                         { icon: '🔒', t: 'ISO 27001 Certified', s: 'Information Security Mgmt' },
@@ -223,7 +223,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             <p className="text-slate-400 font-mono text-[10px] uppercase tracking-wider">{a.s}</p>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </section>
 
             {/* =====================================================

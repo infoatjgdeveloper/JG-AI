@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => {
         { id: 'home', label: 'Home' },
         { id: 'research', label: 'Research' },
         { id: 'api', label: 'Platform' },
-        { id: 'company', label: 'Company' },
+        { id: 'company', label: 'About' },
         { id: 'careers', label: 'Career' },
         { id: 'investors', label: 'Investor' },
         { id: 'portfolio', label: 'Portfolio' },
@@ -66,13 +66,13 @@ const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => {
                         <ThemeToggle />
                     </div>
 
-                    <button  onClick={() => {
-    
-    window.open(
-      'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
-      '_blank'
-    );
-  }}className="hidden lg:block mr-1 px-5 py-1.5 bg-primary text-white text-[13px] font-bold rounded-full hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">
+                    <button onClick={() => {
+
+                        window.open(
+                            'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
+                            '_blank'
+                        );
+                    }} className="hidden lg:block mr-1 px-5 py-1.5 bg-primary text-white text-[13px] font-bold rounded-full hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">
                         Get a demo
                     </button>
 
@@ -112,8 +112,8 @@ const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => {
             {/* Mobile Menu */}
             <div
                 className={`lg:hidden fixed top-20 right-4 left-4 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-slate-200/80 dark:border-slate-700/80 rounded-3xl shadow-2xl transition-all duration-300 ${isMobileMenuOpen
-                        ? 'opacity-100 translate-y-0 pointer-events-auto'
-                        : 'opacity-0 -translate-y-4 pointer-events-none'
+                    ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    : 'opacity-0 -translate-y-4 pointer-events-none'
                     }`}
             >
                 <nav className="p-4">
@@ -143,13 +143,13 @@ const Header: React.FC<HeaderProps> = ({ activePage, setActivePage }) => {
                     </div>
 
                     <div className="px-4 pt-4">
-                        <button  onClick={() => {
-    window.open(
-      'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
-      '_blank'
-    );
-  }} 
-  className="w-full px-6 py-3 bg-primary text-white text-sm font-bold rounded-2xl hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">
+                        <button onClick={() => {
+                            window.open(
+                                'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
+                                '_blank'
+                            );
+                        }}
+                            className="w-full px-6 py-3 bg-primary text-white text-sm font-bold rounded-2xl hover:bg-primary/90 transition-colors shadow-md shadow-primary/20">
                             Get a demo
                         </button>
                     </div>

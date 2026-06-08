@@ -1,9 +1,9 @@
 import React from 'react';
-import { 
-    ChartBarIcon, 
-    ShieldCheckIcon, 
-    DocumentTextIcon, 
-    ArrowUpRightIcon, 
+import {
+    ChartBarIcon,
+    ShieldCheckIcon,
+    DocumentTextIcon,
+    ArrowUpRightIcon,
     SphereWireframe,
     ArrowRightIcon,
     CpuChipIcon,
@@ -14,7 +14,7 @@ const InvestorsPage = () => {
     return (
         /* Removed bg-black and text-white to let the global theme take over */
         <div className="min-h-screen bg-background text-foreground selection:bg-accent selection:text-white transition-colors duration-300">
-            
+
             {/* Hero Section */}
             <section className="relative pt-32 pb-20 px-6 overflow-hidden">
                 <div className="max-w-7xl mx-auto relative z-10">
@@ -31,7 +31,7 @@ const InvestorsPage = () => {
                             Investing in the <span className="text-accent">Autonomous</span> Future.
                         </h1>
                         <p className="text-xl text-muted-foreground leading-relaxed mb-10">
-                            We are building the infrastructure for the next era of AI. Join us as we scale 
+                            We are building the infrastructure for the next era of AI. Join us as we scale
                             enterprise-grade intelligence to millions of users worldwide.
                         </p>
                         <div className="flex flex-wrap gap-4">
@@ -39,19 +39,19 @@ const InvestorsPage = () => {
                             <a href="#documents" className="px-8 py-4 bg-foreground text-background rounded-full font-bold hover:bg-accent hover:text-white transition-all flex items-center gap-2">
                                 Access Pitch Deck <ArrowRightIcon className="w-4 h-4" />
                             </a>
-                            <button  onClick={() => {
-    
-    window.open(
-      'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
-      '_blank'
-    );
-  }}className="px-8 py-4 bg-muted border border-border rounded-full font-bold hover:bg-accent/10 transition-all">
+                            <button onClick={() => {
+
+                                window.open(
+                                    'https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog',
+                                    '_blank'
+                                );
+                            }} className="px-8 py-4 bg-muted border border-border rounded-full font-bold hover:bg-accent/10 transition-all">
                                 Schedule Briefing
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 {/* Background Decoration - Low opacity to work in both modes */}
                 <SphereWireframe className="absolute top-20 right-[-10%] w-[600px] h-[600px] text-accent opacity-[0.08]" />
             </section>
@@ -61,9 +61,9 @@ const InvestorsPage = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {[
-                            { label: 'Revenue Growth', value: '320%', icon: ChartBarIcon },
-                            { label: 'Active Users', value: '1.2M+', icon: CubeTransparentIcon },
-                            { label: 'Retention Rate', value: '94%', icon: ShieldCheckIcon },
+                            { label: 'Revenue Growth', value: '20%', icon: ChartBarIcon },
+                            { label: 'Active Users', value: '1.2k+', icon: CubeTransparentIcon },
+                            { label: 'Retention Rate', value: '9%', icon: ShieldCheckIcon },
                             { label: 'Compute Power', value: '25 PFLOPS', icon: CpuChipIcon },
                         ].map((stat, i) => (
                             <div key={i} className="space-y-2">
@@ -89,15 +89,16 @@ const InvestorsPage = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        
+
                         <div className="col-span-1 md:col-span-2 p-8 bg-primary text-white rounded-3xl border border-white/10 relative overflow-hidden group shadow-2xl">
                             <div className="relative z-10">
                                 <DocumentTextIcon className="w-12 h-12 text-accent mb-6" />
                                 <h3 className="text-2xl font-bold mb-2">Strategic Pitch Deck 2024</h3>
                                 <p className="text-white/70 mb-8 max-w-md">Our comprehensive vision, market analysis, financial projections, and product roadmap for the next 36 months.</p>
-                                <a 
-                                    href="YOUR_DRIVE_LINK_HERE" 
-                                    target="_blank" 
+                                <a
+                                    href="https://drive.google.com/file/d/1CrT2JHgx1P1uLpyVwQzewrmc07Y_SOrF/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-full font-bold hover:scale-105 transition-all"
                                 >
                                     View Pitch Deck <ArrowUpRightIcon className="w-4 h-4" />
@@ -113,8 +114,8 @@ const InvestorsPage = () => {
                                 // { title: 'Legal Documentation', size: '4.1 MB' },
                                 // { title: 'Market Analysis Report', size: '1.8 MB' },
                             ].map((doc, i) => (
-                                <div 
-                                    key={i} 
+                                <div
+                                    key={i}
                                     className="p-6 bg-muted border border-border rounded-2xl hover:border-accent/50 transition-all cursor-pointer group"
                                 >
                                     <div className="flex justify-between items-center">
