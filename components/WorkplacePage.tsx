@@ -55,11 +55,12 @@ const WorkplacePage: React.FC = () => {
                     </h2>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        {/* Image Placeholder on the Left */}
-                        <div className="aspect-video bg-slate-100 dark:bg-slate-800 rounded-3xl flex items-center justify-center">
-                            <span className="text-xl text-slate-500">
-                                
-                            </span>
+                        <div className="aspect-video bg-slate-100 dark:bg-slate-800 rounded-3xl overflow-hidden shadow-xl group relative">
+                            <img
+                                src="/agenthub_preview.png"
+                                alt="AI Agent Marketplace Preview"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
                         </div>
 
                         {/* Text and Features on the Right */}

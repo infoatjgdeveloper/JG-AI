@@ -275,10 +275,12 @@ const PlatformPage: React.FC = () => {
                 {/* SECTION 2: MARKETPLACE DETAILS */}
                 <section className="mb-40">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="aspect-video bg-slate-100 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 flex items-center justify-center shadow-inner relative overflow-hidden">
-                            {/* Marketplace Preview Placeholder */}
-                            <div className="absolute inset-0 opacity-20 bg-grid-slate-900/[0.04] dark:bg-grid-white/[0.02]"></div>
-                            <StorefrontIcon className="w-24 h-24 text-slate-300 dark:text-slate-700" />
+                        <div className="aspect-video bg-slate-100 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 overflow-hidden shadow-xl group relative">
+                            <img
+                                src="/agenthub_preview.png"
+                                alt="AI Agent Marketplace Preview"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
                         </div>
 
                         <div>
