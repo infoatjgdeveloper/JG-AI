@@ -28,7 +28,7 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                             </h3>
                         </div>
                         <p className="text-sm leading-relaxed mb-6 max-w-sm text-slate-400">
-                            Engineering the intelligence of tomorrow for enterprises across 37+ countries. Headquartered in India, operating globally through <strong className="text-white">BRJU Infosec Inc.</strong> (North America) and <strong className="text-white">IA7 Global Tech</strong> (Europe). ISO 27001 certified. GDPR compliant.
+                            Engineering the intelligence of tomorISOrow for enterprises across 37+ countries. Headquartered in India, operating globally through <strong className="text-white">BRJU Infosec Inc.</strong> (North America) and <strong className="text-white">IA7 Global Tech</strong> (Europe).
                         </p>
                         <address className="not-italic text-sm leading-relaxed mb-6 text-slate-400">
                             Ahmedabad, Gujarat, India<br />
@@ -131,7 +131,7 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                 {/* Bottom Section */}
                 <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-800 gap-4">
                     <p className="text-xs text-slate-500 text-center md:text-left">
-                        © 2026 JG AI Research &amp; Development Pvt. Ltd. All rights reserved. Registered in India. ISO 27001 Certified.
+                        © 2026 JG AI Research &amp; Development Pvt. Ltd. All rights reserved. Registered in India.
                     </p>
                     <div className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" aria-hidden="true"></div>

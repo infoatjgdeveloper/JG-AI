@@ -35,10 +35,6 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
             a: 'JGAI currently serves 37+ countries across 6 continents. North American clients (US, Canada, Mexico, Latin America) are served through BRJU Infosec Inc. — our US LLC. European clients (UK, Germany, France, Netherlands, Spain, Poland, Italy, and broader EU) are served through IA7 Global Tech, our EU-registered entity. All other markets — India, UAE, Saudi Arabia, Qatar, Singapore, Australia, Nigeria, South Africa, and 15+ more — are served directly through JGAI HQ.',
         },
         {
-            q: 'Is JGAI GDPR compliant? What about ISO 27001?',
-            a: 'Yes to both. JGAI Group holds ISO 27001 certification for information security management. For GDPR, all European client data is processed exclusively within EU jurisdiction by IA7 Global Tech, our EU-based entity. JGAI also supports SOC2 compliance through BRJU Infosec Inc. for North American enterprise clients.',
-        },
-        {
             q: "How much does JGAI's AI chatbot cost?",
             a: 'The AI Chatbot subscription starts at $199 per month and includes custom training on your data, multi-channel deployment (website + WhatsApp + app), 10+ language support, a real-time analytics dashboard, human agent handoff, and monthly model retraining. Business websites start at $499 one-time. Enterprise Suite pricing is custom-scoped — email info@jgdeveloper.com for a quote.',
         },
@@ -737,7 +733,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             <p className="text-green-400">✔ 37 active regions — all nodes healthy</p>
                             <p className="text-green-400">✔ BRJU Infosec: threat shield armed</p>
                             <p className="text-green-400">✔ IA7 EU: GDPR compliance — green</p>
-                            <p className="text-green-400">✔ ISO 27001 audit: passed 2024</p>
+                            {/* <p className="text-green-400">✔ ISO 27001 audit: passed 2024</p> */}
                             <p><span className="text-accent">❯</span> jgai.run(&quot;competitive_advantage_analysis&quot;)</p>
                             <p className="text-blue-400">↳ Analyzing 500+ enterprise deployments...</p>
                             <p className="text-yellow-300">↳ Avg client ROI: 4.2x · Payback: 67 days</p>
