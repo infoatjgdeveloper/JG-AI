@@ -272,6 +272,44 @@ const PlatformPage: React.FC = () => {
                     </div>
                 </section>
 
+                {/* SECTION 1.5: OUR PLATFORMS */}
+                <section className="mb-40">
+                    <div className="text-center max-w-3xl mx-auto mb-16">
+                        <h2 className="text-sm font-mono text-accent uppercase tracking-[0.3em] mb-4">Live Products</h2>
+                        <h3 className="text-4xl font-display font-bold text-primary dark:text-white mb-6">Our Platforms</h3>
+                        <p className="text-lg text-slate-600 dark:text-slate-400">
+                            Production AI platforms you can open and use right now. Built, deployed and operated by JGAI.
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {[
+                            { n: '01', title: 'The AI Agent Workplace', desc: 'Buy, sell and trade intelligent AI agents in the open marketplace for proprietary models.', tag: 'Marketplace', url: 'https://agenthub.jgdeveloper.com/' },
+                            { n: '02', title: 'AI Agent For Website', desc: 'A live AI assistant you can drop into any website. Try the working demo instantly.', tag: 'Demo', url: 'https://jgai-demo.netlify.app/' },
+                            { n: '03', title: 'AI Stock Platform', desc: 'AI-powered market intelligence and analytics for stocks, live and interactive.', tag: 'Fintech', url: 'https://jd-markets.netlify.app/' },
+                            { n: '04', title: 'AI Real Estate Platform', desc: 'Intelligent property discovery and analytics powered by AI.', tag: 'PropTech', url: 'https://jgai-realestate.netlify.app/' },
+                        ].map((pf, i) => (
+                            <a
+                                key={i}
+                                href={pf.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative p-10 bg-slate-50 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-primary/40 hover:shadow-xl transition-all duration-300 block overflow-hidden"
+                            >
+                                <div className="absolute top-0 right-0 w-28 h-28 bg-primary/5 group-hover:bg-primary/10 rounded-bl-full transition-colors"></div>
+                                <div className="flex items-center justify-between mb-6">
+                                    <span className="font-mono text-sm text-primary dark:text-blue-400 font-bold">/ {pf.n}</span>
+                                    <span className="font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-blue-400 border border-primary/10">{pf.tag}</span>
+                                </div>
+                                <h4 className="text-2xl font-display font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary dark:group-hover:text-blue-400 transition-colors">{pf.title}</h4>
+                                <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">{pf.desc}</p>
+                                <span className="inline-flex items-center text-primary dark:text-blue-400 font-bold text-sm">
+                                    Open Platform <span className="ml-2 group-hover:translate-x-2 transition-transform">&rarr;</span>
+                                </span>
+                            </a>
+                        ))}
+                    </div>
+                </section>
+
                 {/* SECTION 2: MARKETPLACE DETAILS */}
                 <section className="mb-40">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

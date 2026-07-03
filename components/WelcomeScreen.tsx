@@ -84,13 +84,15 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             >
                                 Explore Solutions <ArrowRightIcon className="w-4 h-4" />
                             </button>
-                            <button
-                                onClick={() => scrollTo('demo')}
+                            <a
+                                href="https://jgai-demo.netlify.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-full font-bold text-sm transition-all hover:bg-slate-50 dark:hover:bg-slate-700 hover:border-slate-300 dark:hover:border-slate-600 shadow-sm"
-                                aria-label="Try the free JGAI AI chatbot demo"
+                                aria-label="Try the free JGAI AI chatbot demo (opens in new tab)"
                             >
                                 Try Free AI Demo
-                            </button>
+                            </a>
                         </div>
 
                         {/* Hero Stats Bar */}
@@ -622,12 +624,14 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                                 </li>
                             ))}
                         </ul>
-                        <button
-                            onClick={() => scrollTo('demo')}
+                        <a
+                            href="https://jgai-demo.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-accent/90 transition-colors"
                         >
                             Try It Live, Free <ArrowRightIcon className="w-4 h-4" />
-                        </button>
+                        </a>
                     </article>
 
                     {/* Product 3: Enterprise AI Suite */}
