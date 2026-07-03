@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
 
     return (
         <footer className="bg-slate-900 text-slate-400 pt-20 pb-12 px-4 md:px-8 lg:px-16 relative z-10" aria-labelledby="footer-heading">
-            <h2 id="footer-heading" className="sr-only">JGAI — Footer Navigation</h2>
+            <h2 id="footer-heading" className="sr-only">JGAI, Footer Navigation</h2>
             <div className="max-w-[90rem] mx-auto">
 
                 {/* Top Section */}
@@ -111,7 +111,7 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                                 className="inline-flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-3 py-1.5 rounded-full transition-colors"
                                 aria-label="Visit BRJU Infosec Inc. (opens in new tab)"
                             >
-                                🇺🇸 BRJU Infosec Inc.
+                                BRJU Infosec Inc.
                                 <span className="text-slate-400">↗</span>
                             </a>
                             <a
@@ -121,7 +121,7 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                                 className="inline-flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-3 py-1.5 rounded-full transition-colors"
                                 aria-label="Visit IA7 Global Tech (opens in new tab)"
                             >
-                                🇪🇺 IA7 Global Tech
+                                IA7 Global Tech
                                 <span className="text-slate-400">↗</span>
                             </a>
                         </div>

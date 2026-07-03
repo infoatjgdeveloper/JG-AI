@@ -5,31 +5,26 @@ const PortfolioPage: React.FC = () => {
     const services = [
         {
             title: "Web, App & E-commerce",
-            icon: "🌐",
             link: "https://www.notion.so/Web-App-E-commerce-Portfolio-33fadd43948581fb85f4cbf3e7ef9638?pvs=21",
             description: "Modern, responsive web applications and scalable e-commerce platforms built with cutting-edge tech."
         },
         {
             title: "AI & Blockchain",
-            icon: "🤖",
             link: "https://www.notion.so/AI-Blockchain-Portfolio-33fadd439485814fb82acc5232cd1458?pvs=21",
             description: "Intelligent AI-native solutions and secure blockchain architectures for the next generation of business."
         },
         {
             title: "Software Development",
-            icon: "⚙️",
             link: "https://www.notion.so/Software-Development-Portfolio-33fadd439485815c9cbef88f8748b4fd?pvs=21",
             description: "Custom enterprise software solutions tailored to streamline your business operations."
         },
         {
             title: "Cloud Computing",
-            icon: "☁️",
             link: "https://www.notion.so/Cloud-Computing-Portfolio-33fadd43948581efabb5f20f6ee6ff25?pvs=21",
             description: "Scalable cloud infrastructure and DevOps services to ensure 99.9% uptime and global reach."
         },
         {
             title: "Cybersecurity",
-            icon: "🔐",
             link: "https://www.notion.so/Cybersecurity-Portfolio-33fadd43948581f1bf36efda950a41f3?pvs=21",
             description: "Enterprise-grade security protocols to protect your business assets from evolving threats."
         }
@@ -47,10 +42,10 @@ const PortfolioPage: React.FC = () => {
     ];
 
     const metrics = [
-        { label: "Countries Served", value: "37+", icon: "🌍" },
-        { label: "Projects Delivered", value: "100+", icon: "🚀" },
-        { label: "Client Satisfaction", value: "99%", icon: "⭐" },
-        { label: "Support", value: "24 / 7 / 365", icon: "🕐" },
+        { label: "Countries Served", value: "37+"},
+        { label: "Projects Delivered", value: "100+"},
+        { label: "Client Satisfaction", value: "99%"},
+        { label: "Support", value: "24 / 7 / 365"},
     ];
 
     return (
@@ -68,7 +63,7 @@ const PortfolioPage: React.FC = () => {
                     Company <span className="text-primary dark:text-blue-400 underline decoration-accent/30">Portfolio</span>
                 </h1>
                 <p className="max-w-3xl mx-auto text-xl text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
-                    Trusted by clients across 37+ countries. We build world-class technology solutions — from AI-powered platforms to bulletproof cybersecurity.
+                    Trusted by clients across 37+ countries. We build world-class technology solutions, from AI-powered platforms to bulletproof cybersecurity.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 pt-4">
                     <a
@@ -95,7 +90,7 @@ const PortfolioPage: React.FC = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
                     {metrics.map((metric, idx) => (
                         <div key={idx} className="glass-card p-6 rounded-3xl text-center border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-800/50 hover:dark:bg-slate-800/80 transition-colors duration-300">
-                            <div className="text-3xl mb-2">{metric.icon}</div>
+                            <div className="w-8 h-1 rounded-full bg-accent mx-auto mb-4"></div>
                             <div className="text-3xl font-bold text-slate-900 dark:text-white mb-1 font-display">{metric.value}</div>
                             <div className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{metric.label}</div>
                         </div>
@@ -119,7 +114,7 @@ const PortfolioPage: React.FC = () => {
                             className="group relative glass-card p-8 rounded-4xl border-slate-200 dark:border-slate-700/50 bg-white/50 dark:bg-slate-800/40 hover:dark:bg-slate-800/60 transition-all duration-500 hover:-translate-y-2 overflow-hidden block"
                         >
                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 group-hover:bg-primary/10 rounded-bl-full transition-colors duration-500"></div>
-                            <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-500">{service.icon}</div>
+                            <div className="font-mono text-sm text-primary dark:text-blue-400 font-bold mb-6">/ 0{idx + 1}</div>
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary dark:group-hover:text-blue-400 transition-colors uppercase tracking-tight">{service.title}</h3>
                             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 font-medium uppercase tracking-tight">
                                 {service.description}
@@ -163,9 +158,9 @@ const PortfolioPage: React.FC = () => {
                     <div className="space-y-6">
                         {[
                             { title: "Results-Driven Approach", desc: "Every solution we build is tied directly to your business goals. We measure success by your outcomes." },
-                            { title: "AI-Native DNA", desc: "We don't bolt AI on — we architect intelligence into the foundation of your product from day one." },
-                            { title: "Security-First Engineering", desc: "Security isn't an afterthought — it's baked into every layer of every solution we build." },
-                            { title: "Agile & Fast Delivery", desc: "Sprint-based delivery with regular updates, demos, and on-time execution — every single time." }
+                            { title: "AI-Native DNA", desc: "We don't bolt AI on, we architect intelligence into the foundation of your product from day one." },
+                            { title: "Security-First Engineering", desc: "Security isn't an afterthought, it's baked into every layer of every solution we build." },
+                            { title: "Agile & Fast Delivery", desc: "Sprint-based delivery with regular updates, demos, and on-time execution, every single time." }
                         ].map((item, idx) => (
                             <div key={idx} className="flex gap-4 group">
                                 <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary dark:text-blue-400 font-bold group-hover:bg-primary group-hover:text-white transition-all">
@@ -184,13 +179,13 @@ const PortfolioPage: React.FC = () => {
                     <h2 className="text-3xl font-display font-bold uppercase tracking-tight">Our 7-Step Process</h2>
                     <div className="space-y-4">
                         {[
-                            "Discovery Call — Understand vision & goals",
-                            "Solution Design — Architect tech stack",
-                            "Proposal & Pricing — Transparent costs",
-                            "Agile Development — Sprint-based builds",
-                            "QA & Testing — Rigorous quality assurance",
-                            "Launch & Handover — Smooth go-live",
-                            "Ongoing Support — 24/7 maintenance"
+                            "Discovery Call, Understand vision & goals",
+                            "Solution Design, Architect tech stack",
+                            "Proposal & Pricing, Transparent costs",
+                            "Agile Development, Sprint-based builds",
+                            "QA & Testing, Rigorous quality assurance",
+                            "Launch & Handover, Smooth go-live",
+                            "Ongoing Support, 24/7 maintenance"
                         ].map((step, idx) => (
                             <div key={idx} className="flex items-center gap-4 py-2 border-b border-white/5 last:border-0 uppercase tracking-tight text-sm font-medium">
                                 <span className="w-6 h-6 rounded-full bg-accent text-slate-900 flex items-center justify-center text-xs font-bold leading-none">{idx + 1}</span>
@@ -207,7 +202,7 @@ const PortfolioPage: React.FC = () => {
                     <div className="p-10 md:p-14 md:col-span-2 space-y-8">
                         <div className="space-y-4">
                             <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-900 dark:text-white uppercase tracking-tight">Quick Enquiry</h2>
-                            <p className="text-slate-600 dark:text-slate-400 max-w-md uppercase tracking-tight font-medium">Copy and send this template to info@jgdeveloper.com — we respond within 24 hours.</p>
+                            <p className="text-slate-600 dark:text-slate-400 max-w-md uppercase tracking-tight font-medium">Copy and send this template to info@jgdeveloper.com, we respond within 24 hours.</p>
                         </div>
                         <div className="relative group">
                             <pre className="bg-slate-50 dark:bg-slate-800 p-8 rounded-3xl text-sm text-slate-700 dark:text-slate-300 font-mono overflow-x-auto border border-slate-200 dark:border-slate-700">

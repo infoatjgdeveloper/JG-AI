@@ -28,19 +28,19 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
     const faqs = [
         {
             q: 'How quickly can JGAI deploy an AI chatbot for my business?',
-            a: 'Our standard deployment is 48 hours from the moment you sign and share your business documents with us. We train the model on your specific data, deploy it to your website, WhatsApp, or app, and hand it over fully functional. Complex enterprise integrations requiring CRM connectivity or custom API work may take 5–7 business days — we’ll tell you upfront if that applies.',
+            a: 'Our standard deployment is 48 hours from the moment you sign and share your business documents with us. We train the model on your specific data, deploy it to your website, WhatsApp, or app, and hand it over fully functional. Complex enterprise integrations requiring CRM connectivity or custom API work may take 5 to 7 business days, we’ll tell you upfront if that applies.',
         },
         {
             q: 'What countries does JGAI currently serve?',
-            a: 'JGAI currently serves 37+ countries across 6 continents. North American clients (US, Canada, Mexico, Latin America) are served through BRJU Infosec Inc. — our US LLC. European clients (UK, Germany, France, Netherlands, Spain, Poland, Italy, and broader EU) are served through IA7 Global Tech, our EU-registered entity. All other markets — India, UAE, Saudi Arabia, Qatar, Singapore, Australia, Nigeria, South Africa, and 15+ more — are served directly through JGAI HQ.',
+            a: 'JGAI currently serves 37+ countries across 6 continents. North American clients (US, Canada, Mexico, Latin America) are served through BRJU Infosec Inc., our US LLC. European clients (UK, Germany, France, Netherlands, Spain, Poland, Italy, and broader EU) are served through IA7 Global Tech, our EU-registered entity. All other markets, India, UAE, Saudi Arabia, Qatar, Singapore, Australia, Nigeria, South Africa, and 15+ more, are served directly through JGAI HQ.',
         },
         {
             q: "How much does JGAI's AI chatbot cost?",
-            a: 'The AI Chatbot subscription starts at $199 per month and includes custom training on your data, multi-channel deployment (website + WhatsApp + app), 10+ language support, a real-time analytics dashboard, human agent handoff, and monthly model retraining. Business websites start at $499 one-time. Enterprise Suite pricing is custom-scoped — email info@jgdeveloper.com for a quote.',
+            a: 'The AI Chatbot subscription starts at $199 per month and includes custom training on your data, multi-channel deployment (website + WhatsApp + app), 10+ language support, a real-time analytics dashboard, human agent handoff, and monthly model retraining. Business websites start at $499 one-time. Enterprise Suite pricing is custom-scoped, email info@jgdeveloper.com for a quote.',
         },
         {
             q: 'What separates JGAI from other AI development companies?',
-            a: 'Three things. First, our global network: three specialized legal entities across India, North America, and Europe. Second, our research-first methodology: solutions built from first principles using frontier AI research. Third, our accountability model: we track and report on your ROI — not hours billed. Our average client sees a 4.2x return. Our 98% retention rate suggests that’s not a number we made up.',
+            a: 'Three things. First, our global network: three specialized legal entities across India, North America, and Europe. Second, our research-first methodology: solutions built from first principles using frontier AI research. Third, our accountability model: we track and report on your ROI, not hours billed. Our average client sees a 4.2x return. Our 98% retention rate suggests that’s not a number we made up.',
         },
         {
             q: 'How do I become an Authorized Regional Center (ARC) for JGAI?',
@@ -153,7 +153,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                     <div className="flex animate-scroll whitespace-nowrap gap-12 items-center px-10 text-slate-500 dark:text-slate-400 text-sm font-mono">
                         <span>AI Research &amp; Development</span>
                         <span>·</span>
-                        <span>Enterprise AI Chatbots — Live in 48h</span>
+                        <span>Enterprise AI Chatbots, Live in 48h</span>
                         <span>·</span>
                         <span>Cybersecurity &amp; InfoSec</span>
                         <span>·</span>
@@ -175,7 +175,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         <span>·</span>
                         <span>Penetration Testing</span>
                         <span>·</span>
-                        <span>Multi-Language AI — 10+ Languages</span>
+                        <span>Multi-Language AI, 10+ Languages</span>
                     </div>
                 </div>
 
@@ -205,13 +205,12 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                 <h2 id="awards-heading" className="sr-only">Awards &amp; Certifications</h2>
                 <div className="bg-slate-900 dark:bg-slate-800 rounded-3xl grid grid-cols-2 md:grid-cols-3 gap-px overflow-hidden border border-slate-800">
                     {[
-                        { icon: '\u{1F680}', t: 'Top AI Startup', s: 'Emerging Tech Recognition' },
-                        { icon: '\u{1F1EE}\u{1F1F3}', t: 'DPIIT Recognized', s: 'Startup India \u00B7 Govt. of India' },
-                        { icon: '\u{1F310}', t: '37+ Countries Served', s: 'Global Delivery Network' },
+                        { t: 'Top AI Startup', s: 'Emerging Tech Recognition' },
+                        { t: 'DPIIT Recognized', s: 'Startup India \u00B7 Govt. of India' },
+                        { t: '37+ Countries Served', s: 'Global Delivery Network' },
                     ].map((a, i) => (
                         <div key={i} className="bg-slate-900 dark:bg-slate-800 p-6 text-center flex flex-col items-center justify-center">
-                            <span className="text-3xl mb-3" aria-hidden="true">{a.icon}</span>
-                            <p className="text-white font-bold text-sm mb-1">{a.t}</p>
+                                                        <p className="text-white font-bold text-sm mb-1">{a.t}</p>
                             <p className="text-slate-400 font-mono text-[10px] uppercase tracking-wider">{a.s}</p>
                         </div>
                     ))}
@@ -229,10 +228,10 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             We Don&apos;t Sell AI. We Engineer Dominance.
                         </h2>
                         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                            Most companies automate what exists. JGAI <span className="text-accent font-semibold">rebuilds what&apos;s possible</span> — turning AI research into revenue, security into confidence, and technology into category leadership.
+                            Most companies automate what exists. JGAI <span className="text-accent font-semibold">rebuilds what&apos;s possible</span>, turning AI research into revenue, security into confidence, and technology into category leadership.
                         </p>
                         <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                            Founded in 2020 as JG AI Research &amp; Development Pvt. Ltd., JGAI has grown from a research-focused AI lab in India into a globally operating enterprise technology group. Today we operate through three specialized entities — JGAI HQ, BRJU Infosec Inc. (North America), and IA7 Global Tech (Europe) — forming one of the world&apos;s most comprehensive AI delivery networks.
+                            Founded in 2020 as JG AI Research &amp; Development Pvt. Ltd., JGAI has grown from a research-focused AI lab in India into a globally operating enterprise technology group. Today we operate through three specialized entities, JGAI HQ, BRJU Infosec Inc. (North America), and IA7 Global Tech (Europe), forming one of the world&apos;s most comprehensive AI delivery networks.
                         </p>
                         <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
                             With 500+ completed deployments, a 98% client retention rate, and an average client ROI of 4.2x, our track record is the clearest argument we have. <strong className="text-primary dark:text-white">We don&apos;t compete on price. We compete on results.</strong>
@@ -246,20 +245,20 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             ].map((p, i) => (
                                 <li key={i} className="flex gap-3 items-start">
                                     <CheckIcon className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
-                                    <span className="text-slate-700 dark:text-slate-300"><strong className="text-primary dark:text-white">{p.t}</strong> — {p.d}</span>
+                                    <span className="text-slate-700 dark:text-slate-300"><strong className="text-primary dark:text-white">{p.t}</strong>, {p.d}</span>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
                     <div className="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-700">
-                        <p className="font-mono text-xs uppercase tracking-widest text-slate-400 mb-6">// JGAI — Five Years of Relentless Growth</p>
+                        <p className="font-mono text-xs uppercase tracking-widest text-slate-400 mb-6">// JGAI, Five Years of Relentless Growth</p>
                         <ol className="space-y-6" role="list">
                             {[
                                 { y: '2020', t: 'JGAI Founded in India', d: 'AI research lab established with a mandate to make frontier intelligence accessible to enterprises globally' },
                                 { y: '2021', t: '100 Enterprise Clients, 10+ Countries', d: 'First enterprise AI product launched; international expansion accelerates across Asia and the Middle East' },
-                                { y: '2022', t: 'BRJU Infosec Inc. — North America', d: 'Dedicated cybersecurity LLC established; JGAI Group structure formally created' },
-                                { y: '2023', t: 'IA7 Global Tech — Europe', d: 'EU-based entity launched; advanced AI stack deployed for European enterprise market' },
+                                { y: '2022', t: 'BRJU Infosec Inc., North America', d: 'Dedicated cybersecurity LLC established; JGAI Group structure formally created' },
+                                { y: '2023', t: 'IA7 Global Tech, Europe', d: 'EU-based entity launched; advanced AI stack deployed for European enterprise market' },
                                 { y: '2024', t: '37+ Countries Reached', d: '500+ projects delivered across 6 continents' },
                                 { y: '2025', t: 'Global ARC Program', d: 'Authorized Regional Center framework launched; expanding into 20+ new markets via strategic partners' },
                             ].map((e, i) => (
@@ -301,7 +300,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         Three Entities. Every Market. One Standard.
                     </h2>
                     <p className="text-lg text-slate-500 dark:text-slate-400 max-w-3xl mx-auto">
-                        JGAI doesn&apos;t outsource global delivery to partners — we built it ourselves. Three purpose-built legal entities, each the specialist for their region, all running the same technology backbone.
+                        JGAI doesn&apos;t outsource global delivery to partners, we built it ourselves. Three purpose-built legal entities, each the specialist for their region, all running the same technology backbone.
                     </p>
                 </div>
 
@@ -310,7 +309,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         {
                             tag: '// Global Headquarters · Registered in India',
                             name: 'JGAI R&D Pvt. Ltd.',
-                            desc: 'The intellectual and operational engine of the entire group. JGAI HQ drives all AI research, core product development, and strategic direction — while directly serving clients across Asia, the Middle East, Africa, and markets worldwide.',
+                            desc: 'The intellectual and operational engine of the entire group. JGAI HQ drives all AI research, core product development, and strategic direction, while directly serving clients across Asia, the Middle East, Africa, and markets worldwide.',
                             tags: ['AI Research', 'LLM Engineering', 'Product Dev', 'Global HQ'],
                             url: 'https://jgai.jgdeveloper.com',
                             highlighted: true,
@@ -365,10 +364,10 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                         <div className="md:col-span-2">
                             <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
-                                Become an Authorized Regional Center — Earn as You Grow
+                                Become an Authorized Regional Center, Earn as You Grow
                             </h3>
                             <p className="text-slate-300 leading-relaxed">
-                                Are you an established IT company in Southeast Asia, Sub-Saharan Africa, the Gulf, or Latin America? The JGAI ARC program gives you our full product suite, co-branding rights, dedicated technical support, and a revenue-share model — so you can sell enterprise AI under a globally recognised brand.
+                                Are you an established IT company in Southeast Asia, Sub-Saharan Africa, the Gulf, or Latin America? The JGAI ARC program gives you our full product suite, co-branding rights, dedicated technical support, and a revenue-share model, so you can sell enterprise AI under a globally recognised brand.
                             </p>
                         </div>
                         <div className="text-center md:text-right">
@@ -394,7 +393,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             Six Services. One Goal: Your ROI.
                         </h2>
                         <p className="text-lg text-slate-500 dark:text-slate-400 max-w-3xl mx-auto">
-                            Every service JGAI delivers is architected for real-world performance at enterprise scale — with security, compliance, and measurable outcomes built in from day one, not patched in later.
+                            Every service JGAI delivers is architected for real-world performance at enterprise scale, with security, compliance, and measurable outcomes built in from day one, not patched in later.
                         </p>
                     </div>
 
@@ -417,10 +416,10 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                                 Icon: ShieldCheckIcon,
                                 color: 'red',
                                 title: 'Cybersecurity & InfoSec',
-                                desc: 'BRJU Infosec Inc., JGAI’s North American cybersecurity division, operates at a level most firms can’t match. We’ve uncovered critical vulnerabilities that Fortune-tier auditors missed — systematically.',
+                                desc: 'BRJU Infosec Inc., JGAI’s North American cybersecurity division, operates at a level most firms can’t match. We’ve uncovered critical vulnerabilities that Fortune-tier auditors missed, systematically.',
                                 features: [
                                     'Enterprise Penetration Testing & Red Teaming',
-                                    '24/7 SOC as a Service — 15min response SLA',
+                                    '24/7 SOC as a Service, 15min response SLA',
                                     'Zero Trust Architecture Design & Implementation',
                                     'HIPAA Compliance & Data Protection',
                                     'AI-Powered Threat Detection & Intelligence',
@@ -430,10 +429,10 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                                 Icon: DevicePhoneMobileIcon,
                                 color: 'indigo',
                                 title: 'Web & App Development',
-                                desc: 'We build digital products that perform, convert, and last. Enterprise portals, SaaS platforms, and mobile applications developed with AI at their core — not bolted on as a feature.',
+                                desc: 'We build digital products that perform, convert, and last. Enterprise portals, SaaS platforms, and mobile applications developed with AI at their core, not bolted on as a feature.',
                                 features: [
                                     'Enterprise Web Platforms & Customer Portals',
-                                    'Mobile Applications — iOS & Android',
+                                    'Mobile Applications, iOS & Android',
                                     'SaaS Product Engineering from Zero to Launch',
                                     'API Architecture, GraphQL & Microservices',
                                     'E-Commerce with AI-Powered Personalisation',
@@ -443,9 +442,9 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                                 Icon: BoltIcon,
                                 color: 'purple',
                                 title: 'AI Chatbot Solutions',
-                                desc: 'Generic chatbots frustrate customers. JGAI chatbots close them. Trained exclusively on your business documents, product catalogue, FAQs, and tone of voice — in 10+ languages, on every channel.',
+                                desc: 'Generic chatbots frustrate customers. JGAI chatbots close them. Trained exclusively on your business documents, product catalogue, FAQs, and tone of voice, in 10+ languages, on every channel.',
                                 features: [
-                                    'Custom-Trained Website AI Assistants — live in 48h',
+                                    'Custom-Trained Website AI Assistants, live in 48h',
                                     'WhatsApp, Telegram & Messenger AI Bots',
                                     'Customer Support Automation & Ticket Deflection',
                                     'AI-Powered Lead Qualification & Sales Bots',
@@ -456,12 +455,12 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                                 Icon: CloudArrowUpIcon,
                                 color: 'blue',
                                 title: 'Cloud Architecture & DevOps',
-                                desc: 'AI at scale demands infrastructure built for it. JGAI designs cloud environments optimised for ML workloads — with Kubernetes orchestration, automated CI/CD, infrastructure-as-code, and 99.9% uptime SLAs.',
+                                desc: 'AI at scale demands infrastructure built for it. JGAI designs cloud environments optimised for ML workloads, with Kubernetes orchestration, automated CI/CD, infrastructure-as-code, and 99.9% uptime SLAs.',
                                 features: [
                                     'Cloud Migration & Modernisation (AWS, Azure, GCP)',
                                     'Kubernetes Cluster Design & Orchestration',
                                     'CI/CD Pipeline Engineering & GitOps',
-                                    'Infrastructure as Code — Terraform & Pulumi',
+                                    'Infrastructure as Code, Terraform & Pulumi',
                                     'Cloud Cost Optimisation & FinOps Strategy',
                                 ],
                             },
@@ -469,7 +468,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                                 Icon: ChartBarIcon,
                                 color: 'green',
                                 title: 'Data Engineering & Analytics',
-                                desc: 'Decisions made on bad data are worse than no decisions at all. JGAI builds data foundations your organisation can actually trust — real-time pipelines, clean warehouses, and analytics dashboards.',
+                                desc: 'Decisions made on bad data are worse than no decisions at all. JGAI builds data foundations your organisation can actually trust, real-time pipelines, clean warehouses, and analytics dashboards.',
                                 features: [
                                     'Enterprise Data Warehouse & Lakehouse Architecture',
                                     'Real-Time BI Dashboards & Executive Reporting',
@@ -523,9 +522,9 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
                     <div className="hidden md:block absolute top-8 left-0 right-0 h-0.5 bg-slate-100 dark:bg-slate-800 -z-10"></div>
                     {[
-                        { step: '01', title: 'Deep Discovery', desc: 'We spend real time learning your business — the goals that matter, the pain points costing you money, and the technology landscape you’re working within. No templates. No assumptions.' },
-                        { step: '02', title: 'Bespoke Design', desc: 'Our architects build a technology roadmap engineered specifically for you — with defined milestones, measurable success criteria, and pricing that has no hidden clauses.' },
-                        { step: '03', title: 'Agile Build', desc: 'Weekly sprint cycles, live demos at every stage, and a direct communication line to your lead engineer. You see progress constantly — never a black box.' },
+                        { step: '01', title: 'Deep Discovery', desc: 'We spend real time learning your business, the goals that matter, the pain points costing you money, and the technology landscape you’re working within. No templates. No assumptions.' },
+                        { step: '02', title: 'Bespoke Design', desc: 'Our architects build a technology roadmap engineered specifically for you, with defined milestones, measurable success criteria, and pricing that has no hidden clauses.' },
+                        { step: '03', title: 'Agile Build', desc: 'Weekly sprint cycles, live demos at every stage, and a direct communication line to your lead engineer. You see progress constantly, never a black box.' },
                         { step: '04', title: 'Launch & Scale', desc: 'We don’t hand over a ZIP file and disappear. Post-launch, our 24/7 global support team monitors performance, patches issues, and evolves your solution as your business grows.' },
                     ].map((item, i) => (
                         <div key={i} className="flex flex-col items-center text-center">
@@ -561,7 +560,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         </div>
                         <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2" itemProp="name">Business Website</h3>
                         <p className="text-sm text-slate-500 dark:text-slate-400 mb-4" itemProp="description">
-                            A conversion-engineered, AI-powered, SEO-optimised business website — professionally designed and live within 7 business days. Built to rank, built to convert.
+                            A conversion-engineered, AI-powered, SEO-optimised business website, professionally designed and live within 7 business days. Built to rank, built to convert.
                         </p>
                         <div className="mb-6" itemProp="offers" itemScope itemType="https://schema.org/Offer">
                             <span className="font-display font-bold text-3xl text-primary dark:text-white">from $<span itemProp="price">499</span></span>
@@ -573,8 +572,8 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             {[
                                 'Up to 15 custom-designed, branded pages',
                                 'Full technical + on-page SEO by JGAI experts',
-                                'Integrated JGAI AI chatbot — live on launch day',
-                                'CMS dashboard — update content without code',
+                                'Integrated JGAI AI chatbot, live on launch day',
+                                'CMS dashboard, update content without code',
                                 'Mobile-first, Core Web Vitals optimised',
                                 '3 months dedicated post-launch support',
                             ].map((f, j) => (
@@ -600,7 +599,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         </div>
                         <h3 className="text-xl font-bold mb-2" itemProp="name">AI Chatbot</h3>
                         <p className="text-sm text-slate-200 mb-4" itemProp="description">
-                            Your own AI assistant — trained exclusively on your data, deployed to your website and WhatsApp, live within 48 hours. The last customer service hire you&apos;ll ever need to make.
+                            Your own AI assistant, trained exclusively on your data, deployed to your website and WhatsApp, live within 48 hours. The last customer service hire you&apos;ll ever need to make.
                         </p>
                         <div className="mb-6" itemProp="offers" itemScope itemType="https://schema.org/Offer">
                             <span className="font-display font-bold text-3xl">from $<span itemProp="price">199</span></span>
@@ -612,7 +611,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             {[
                                 'Trained on your documents, FAQs & tone',
                                 'Multi-channel: website + WhatsApp + app',
-                                '10+ languages — auto-detected per visitor',
+                                '10+ languages, auto-detected per visitor',
                                 'Real-time conversation analytics dashboard',
                                 'Seamless human agent handoff when needed',
                                 'Monthly model retraining on new data',
@@ -638,7 +637,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         </div>
                         <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2" itemProp="name">Enterprise AI Suite</h3>
                         <p className="text-sm text-slate-500 dark:text-slate-400 mb-4" itemProp="description">
-                            The complete AI transformation package for large organisations — custom-scoped, multi-entity delivered, and built to reshape your competitive position permanently.
+                            The complete AI transformation package for large organisations, custom-scoped, multi-entity delivered, and built to reshape your competitive position permanently.
                         </p>
                         <div className="mb-6">
                             <span className="font-display font-bold text-3xl text-primary dark:text-white">Custom</span>
@@ -650,7 +649,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                                 'Cybersecurity posture & SOC monitoring',
                                 'Dedicated senior account manager & CTO access',
                                 'SLA-backed 24/7 global priority support',
-                                'Multi-region deployment — all 3 JGAI entities',
+                                'Multi-region deployment, all 3 JGAI entities',
                                 'Quarterly business & technology reviews',
                             ].map((f, j) => (
                                 <li key={j} className="flex gap-2 items-start text-sm text-slate-600 dark:text-slate-400">
@@ -680,13 +679,13 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             This Is the AI Your Customers Will Talk To.
                         </h2>
                         <p className="text-lg text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
-                            What you&apos;re about to chat with is a live instance of the same AI technology powering enterprise deployments across 37+ countries. Ask it anything — from JGAI&apos;s services and pricing to deployment timelines and compliance.
+                            What you&apos;re about to chat with is a live instance of the same AI technology powering enterprise deployments across 37+ countries. Ask it anything, from JGAI&apos;s services and pricing to deployment timelines and compliance.
                         </p>
 
                         <div className="space-y-5 mb-8">
                             {[
-                                { t: '48-Hour Deployment, Contractually Guaranteed', d: 'Upload your documents on day 1. Your AI chatbot — trained on your specific business, speaking in your brand’s voice — goes live on day 2.' },
-                                { t: '10+ Languages — No Extra Configuration', d: 'Your AI detects each visitor’s language automatically — English, Hindi, Arabic, Spanish, French, German, Mandarin, and more.' },
+                                { t: '48-Hour Deployment, Contractually Guaranteed', d: 'Upload your documents on day 1. Your AI chatbot, trained on your specific business, speaking in your brand’s voice, goes live on day 2.' },
+                                { t: '10+ Languages, No Extra Configuration', d: 'Your AI detects each visitor’s language automatically, English, Hindi, Arabic, Spanish, French, German, Mandarin, and more.' },
                                 { t: 'Analytics That Actually Tell You Something', d: 'Track every conversation, capture every qualified lead, measure resolution rates from a live dashboard updated in real time.' },
                             ].map((f, i) => (
                                 <div key={i} className="flex gap-4">
@@ -719,15 +718,15 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             <div className="w-2.5 h-2.5 rounded-full bg-red-500"></div>
                             <div className="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
                             <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
-                            <span className="font-mono text-[10px] text-slate-500 ml-2">jgai-enterprise v5.2.0 — global inference</span>
+                            <span className="font-mono text-[10px] text-slate-500 ml-2">jgai-enterprise v5.2.0, global inference</span>
                         </div>
                         <div className="font-mono text-[12px] space-y-2 text-slate-300">
                             <p><span className="text-accent">❯</span> jgai deploy --client &quot;enterprise&quot; --sla 99.9</p>
                             <p className="text-slate-500">✦ Bootstrapping JGAI Enterprise Core...</p>
                             <p className="text-green-400">✔ AI inference engine: 42ms p99 latency</p>
-                            <p className="text-green-400">✔ 37 active regions — all nodes healthy</p>
+                            <p className="text-green-400">✔ 37 active regions, all nodes healthy</p>
                             <p className="text-green-400">✔ BRJU Infosec: threat shield armed</p>
-                            <p className="text-green-400">✔ IA7 EU: regional compliance — green</p>
+                            <p className="text-green-400">✔ IA7 EU: regional compliance, green</p>
                             <p><span className="text-accent">❯</span> jgai.run(&quot;competitive_advantage_analysis&quot;)</p>
                             <p className="text-blue-400">↳ Analyzing 500+ enterprise deployments...</p>
                             <p className="text-yellow-300">↳ Avg client ROI: 4.2x · Payback: 67 days</p>
@@ -747,7 +746,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         We&apos;re Already in Your Market. Probably.
                     </h2>
                     <p className="text-lg text-slate-500 dark:text-slate-400 max-w-3xl mx-auto">
-                        37+ countries. 6 continents. 3 regional entities. Whether you&apos;re in Dubai, Dallas, Delhi, Dublin, or Dhaka — JGAI has a team, a legal entity, and a compliance framework built for your jurisdiction.
+                        37+ countries. 6 continents. 3 regional entities. Whether you&apos;re in Dubai, Dallas, Delhi, Dublin, or Dhaka, JGAI has a team, a legal entity, and a compliance framework built for your jurisdiction.
                     </p>
                 </div>
 
@@ -800,19 +799,19 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {[
                         {
-                            quote: 'JGAI deployed a fully trained AI support assistant across our entire operation in under 72 hours — exactly as promised. Customer response times dropped by 74%, first-contact resolution hit 91%, and we were seeing measurable ROI before the end of the first month.',
+                            quote: 'JGAI deployed a fully trained AI support assistant across our entire operation in under 72 hours, exactly as promised. Customer response times dropped by 74%, first-contact resolution hit 91%, and we were seeing measurable ROI before the end of the first month.',
                             name: 'Ahmed R.',
-                            role: 'CTO — E-Commerce Platform · Dubai, UAE',
+                            role: 'CTO, E-Commerce Platform · Dubai, UAE',
                         },
                         {
                             quote: 'BRJU Infosec conducted the most thorough security audit I’ve ever witnessed. They found 23 critical vulnerabilities that two previous security firms had completely missed. We closed three major enterprise contracts within 90 days.',
                             name: 'Sarah K.',
-                            role: 'CEO — SaaS Platform · Toronto, Canada',
+                            role: 'CEO, SaaS Platform · Toronto, Canada',
                         },
                         {
-                            quote: 'IA7 Global Tech built our secure enterprise AI data platform entirely from scratch — on time, on budget, and without a single security incident. The platform now processes 2 million client records daily.',
+                            quote: 'IA7 Global Tech built our secure enterprise AI data platform entirely from scratch, on time, on budget, and without a single security incident. The platform now processes 2 million client records daily.',
                             name: 'Marcus L.',
-                            role: 'VP Engineering — Fintech Firm · Berlin, Germany',
+                            role: 'VP Engineering, Fintech Firm · Berlin, Germany',
                         },
                     ].map((t, i) => (
                         <figure key={i} className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 p-8 flex flex-col" itemScope itemType="https://schema.org/Review">
@@ -835,7 +834,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
             </section>
 
             {/* =====================================================
-                 FAQ — Schema.org FAQPage markup
+                 FAQ, Schema.org FAQPage markup
                  ===================================================== */}
             <section id="faq" aria-labelledby="faq-heading" className="bg-slate-50 dark:bg-slate-900/50 py-24 border-y border-slate-200 dark:border-slate-800">
                 <div className="max-w-3xl mx-auto px-4">
@@ -894,7 +893,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                         While You&apos;re Reading This, Your Competitors Are Deploying AI.
                     </h2>
                     <p className="text-lg text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        The window to gain an AI-driven competitive advantage is open — but it doesn&apos;t stay open forever. Start with a free demo or a 30-minute strategy call. No obligation. No sales pitch. Just a genuine conversation about what&apos;s possible.
+                        The window to gain an AI-driven competitive advantage is open, but it doesn&apos;t stay open forever. Start with a free demo or a 30-minute strategy call. No obligation. No sales pitch. Just a genuine conversation about what&apos;s possible.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4 mb-6">
                         <button onClick={() => scrollTo('demo')} className="bg-accent text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-accent/90 transition-colors shadow-xl">
