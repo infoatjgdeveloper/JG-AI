@@ -1,5 +1,5 @@
 # robots.txt for JGAI — JG AI Research & Development Pvt. Ltd.
-# https://jgai.jgdeveloper.com/
+# https://www.jgdeveloper.com/
 
 User-agent: *
 Allow: /
@@ -48,5 +48,5 @@ User-agent: DotBot
 Disallow: /
 
 # Sitemap location
-Sitemap: https://jgai.jgdeveloper.com/sitemap.xml
-Host: https://jgai.jgdeveloper.com
+Sitemap: https://www.jgdeveloper.com/sitemap.xml
+Host: https://www.jgdeveloper.com

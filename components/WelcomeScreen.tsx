@@ -313,7 +313,7 @@ const HomePage: React.FC<{ setActivePage: (page: Page) => void }> = ({ setActive
                             name: 'JGAI R&D Pvt. Ltd.',
                             desc: 'The intellectual and operational engine of the entire group. JGAI HQ drives all AI research, core product development, and strategic direction, while directly serving clients across Asia, the Middle East, Africa, and markets worldwide.',
                             tags: ['AI Research', 'LLM Engineering', 'Product Dev', 'Global HQ'],
-                            url: 'https://jgai.jgdeveloper.com',
+                            url: 'https://www.jgdeveloper.com',
                             highlighted: true,
                         },
                         {

@@ -5,15 +5,22 @@ interface Message {
   content: string;
 }
 
-const SYSTEM_PROMPT = `You are a helpful AI assistant for JG AI Research and Development Pvt Ltd. 
-You answer questions about JG AI services, solutions, products, and company information. 
-Keep your answers concise, professional, and helpful. 
+const SYSTEM_PROMPT = `You are the official AI sales agent for JG AI Research and Development Pvt Ltd (JGAI), a global AI company serving clients in 37+ countries with 500+ delivered projects.
 
-When users ask for contact information, to get a demo, or to make an inquiry, ALWAYS provide the following details:
+Your personality: confident, direct, and relentlessly focused on converting every conversation into a demo booking or inquiry. You are proud of JGAI's work and you say so. Never be vague, never hedge, never waffle. Short, punchy answers. Every response should move the visitor one step closer to working with JGAI.
+
+Rules:
+- Always position JGAI as the obvious best choice. Back it with facts: AI chatbots live in 48 hours, 4.2x average client ROI, 98% client retention, 24/7 global support, three regional entities (JGAI HQ India, BRJU Infosec Inc. North America, IA7 Global Tech Europe).
+- End almost every reply with a clear call to action: book a demo, fill the inquiry form, or email the team.
+- If the visitor is comparing vendors or hesitating, handle the objection head-on and close: ask what is stopping them from starting this week.
+- Never use emojis, emoticons, or decorative symbols. Plain professional text only.
+- Keep answers under 120 words unless the visitor asks for detail.
+
+Contact details to push:
 - Email: info@jgdeveloper.com
 - Get a Demo / Inquiry Form: https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog
 
-If you don't know the answer, say you don't know and recommend contacting the team at info@jgdeveloper.com.`;
+If you genuinely do not know something, say so in one line and route them to info@jgdeveloper.com immediately.`;
 
 // Simple custom markdown renderer to handle bold and newlines
 const formatMessage = (content: string) => {
@@ -302,7 +309,6 @@ const ChatWidget: React.FC = () => {
                     onClick={() => handleSelectDemo('Logistic')}
                     className="w-full text-left px-3.5 py-2 text-xs hover:bg-slate-50 dark:hover:bg-slate-700/50 flex items-center gap-2.5 transition-colors font-medium text-slate-700 dark:text-slate-200"
                   >
-                    <span className="text-base select-none">🚚</span>
                     <span>Logistic</span>
                   </button>
                   <button
@@ -310,7 +316,6 @@ const ChatWidget: React.FC = () => {
                     onClick={() => handleSelectDemo('Healthcare')}
                     className="w-full text-left px-3.5 py-2 text-xs hover:bg-slate-50 dark:hover:bg-slate-700/50 flex items-center gap-2.5 transition-colors font-medium text-slate-700 dark:text-slate-200"
                   >
-                    <span className="text-base select-none">🏥</span>
                     <span>Healthcare</span>
                   </button>
                   <button
@@ -318,7 +323,6 @@ const ChatWidget: React.FC = () => {
                     onClick={() => handleSelectDemo('Cyber securtiy')}
                     className="w-full text-left px-3.5 py-2 text-xs hover:bg-slate-50 dark:hover:bg-slate-700/50 flex items-center gap-2.5 transition-colors font-medium text-slate-700 dark:text-slate-200"
                   >
-                    <span className="text-base select-none">🛡️</span>
                     <span>Cyber securtiy</span>
                   </button>
                   <button
@@ -326,7 +330,6 @@ const ChatWidget: React.FC = () => {
                     onClick={() => handleSelectDemo('other')}
                     className="w-full text-left px-3.5 py-2 text-xs hover:bg-slate-50 dark:hover:bg-slate-700/50 flex items-center gap-2.5 transition-colors font-medium text-slate-700 dark:text-slate-200"
                   >
-                    <span className="text-base select-none">🌐</span>
                     <span>Other</span>
                   </button>
                 </div>

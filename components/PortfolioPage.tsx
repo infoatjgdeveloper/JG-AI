@@ -248,7 +248,7 @@ Contact Number: `);
                             </div>
                             <div className="space-y-1">
                                 <p className="text-blue-200 text-xs font-bold uppercase tracking-widest">Website</p>
-                                <a href="http://jgai.jgdeveloper.com" className="text-lg font-bold hover:text-accent transition-colors">jgai.jgdeveloper.com</a>
+                                <a href="http://www.jgdeveloper.com" className="text-lg font-bold hover:text-accent transition-colors">www.jgdeveloper.com</a>
                             </div>
                         </div>
                         <a
