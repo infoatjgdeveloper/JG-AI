@@ -1,0 +1,28 @@
+{
+  "name": "JGAI — JG AI Research & Development Pvt. Ltd.",
+  "short_name": "JGAI",
+  "description": "Global AI research and development company serving 37+ countries.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#002E5D",
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "any",
+  "categories": ["business", "productivity", "technology"],
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
