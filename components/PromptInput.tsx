@@ -1,373 +1,184 @@
-
-// import React from 'react';
-// import { ServerStackIcon, ShieldLockIcon, BoltIcon, CloudArrowUpIcon, CodeBracketIcon, RobotIcon, StorefrontIcon, CheckIcon } from './Icons';
-
-// const PlatformPage: React.FC = () => {
-//     return (
-//         <div className="w-full min-h-screen pt-32 pb-20">
-//             <div className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 animate-fade-up">
-
-//                 {/* --- HEADER --- */}
-//                 <div className="text-center max-w-3xl mx-auto mb-24">
-//                     <h1 className="text-5xl md:text-6xl font-display text-primary dark:text-white mb-6">
-//                         Platform
-//                     </h1>
-//                     <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-//                         Our platform underpins every service: from web & mobile apps to our core <strong>AI Agents Marketplace</strong>. Built as a modular, micro-services architecture with enterprise cloud infrastructure.
-//                     </p>
-//                 </div>
-
-//                 {/* --- ARCHITECTURE OVERVIEW --- */}
-//                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-24">
-
-//                     {/* Diagram/Mockup */}
-//                     <div className="lg:col-span-7 bg-slate-50 dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 p-8 flex items-center justify-center min-h-[400px]">
-//                         {/* Conceptual Architecture Diagram */}
-//                         <div className="relative w-full max-w-lg">
-//                             <div className="absolute inset-0 bg-grid-slate-200 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]"></div>
-//                             <div className="relative space-y-4">
-//                                 <div className="flex justify-center gap-4">
-//                                     <div className="px-6 py-3 bg-white dark:bg-slate-900 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 font-mono text-xs text-slate-600 dark:text-slate-300">Web/Mobile Client</div>
-//                                     <div className="px-6 py-3 bg-white dark:bg-slate-900 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 font-mono text-xs text-slate-600 dark:text-slate-300 border-accent/30 text-accent font-bold">Agent Marketplace</div>
-//                                 </div>
-//                                 <div className="h-8 border-l-2 border-dashed border-slate-300 dark:border-slate-600 mx-auto w-0"></div>
-//                                 <div className="bg-primary text-white p-4 rounded-xl shadow-lg text-center">
-//                                     <span className="font-bold">API Gateway & Orchestrator</span>
-//                                 </div>
-//                                 <div className="h-8 border-l-2 border-dashed border-slate-300 dark:border-slate-600 mx-auto w-0"></div>
-//                                 <div className="grid grid-cols-3 gap-4">
-//                                     <div className="p-3 bg-white dark:bg-slate-900 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 text-center text-xs font-bold dark:text-slate-300">Auth & Role</div>
-//                                     <div className="p-3 bg-white dark:bg-slate-900 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 text-center text-xs font-bold text-accent">Agent Logic</div>
-//                                     <div className="p-3 bg-white dark:bg-slate-900 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 text-center text-xs font-bold dark:text-slate-300">Billing</div>
-//                                 </div>
-//                                 <div className="h-8 border-l-2 border-dashed border-slate-300 dark:border-slate-600 mx-auto w-0"></div>
-//                                 <div className="p-4 bg-slate-900 rounded-xl text-center">
-//                                     <span className="font-bold text-white">AI Model Layer (LLMs & Vision)</span>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </div>
-
-//                     {/* Features List */}
-//                     <div className="lg:col-span-5 space-y-4">
-//                         <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all">
-//                             <div className="flex items-center gap-4">
-//                                 <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
-//                                     <ServerStackIcon className="w-5 h-5 text-blue-600" />
-//                                 </div>
-//                                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">Modular Micro-services</h3>
-//                             </div>
-//                         </div>
-//                         <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all">
-//                             <div className="flex items-center gap-4">
-//                                 <div className="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center">
-//                                     <RobotIcon className="w-5 h-5 text-purple-600" />
-//                                 </div>
-//                                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">AI-Agent Orchestration</h3>
-//                             </div>
-//                         </div>
-//                         <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all">
-//                             <div className="flex items-center gap-4">
-//                                 <div className="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center">
-//                                     <ShieldLockIcon className="w-5 h-5 text-green-600" />
-//                                 </div>
-//                                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">Enterprise Security</h3>
-//                             </div>
-//                         </div>
-//                         <div className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all">
-//                             <div className="flex items-center gap-4">
-//                                 <div className="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center">
-//                                     <StorefrontIcon className="w-5 h-5 text-orange-600" />
-//                                 </div>
-//                                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">Marketplace Deployment</h3>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 {/* --- TECH STACK --- */}
-//                 <div className="mb-24">
-//                     <h2 className="text-3xl font-display font-bold text-primary dark:text-white mb-12 text-center">Technology Stack</h2>
-//                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-//                         <div className="p-8 bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700">
-//                             <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center mb-6">
-//                                 <CodeBracketIcon className="w-6 h-6 text-slate-700 dark:text-slate-300" />
-//                             </div>
-//                             <h3 className="text-xl font-bold mb-4 dark:text-white">Application Layer</h3>
-//                             <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> React.js / Next.js</li>
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> Node.js (NestJS)</li>
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> Tailwind CSS</li>
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> GraphQL / REST</li>
-//                             </ul>
-//                         </div>
-
-//                         <div className="p-8 bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700">
-//                             <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center mb-6">
-//                                 <BoltIcon className="w-6 h-6 text-slate-700 dark:text-slate-300" />
-//                             </div>
-//                             <h3 className="text-xl font-bold mb-4 dark:text-white">AI & Data</h3>
-//                             <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> Python (PyTorch/TF)</li>
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> PostgreSQL & MongoDB</li>
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> Pinecone/Milvus</li>
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> FastAPI / LangChain</li>
-//                             </ul>
-//                         </div>
-
-//                         <div className="p-8 bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700">
-//                             <div className="w-12 h-12 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center mb-6">
-//                                 <CloudArrowUpIcon className="w-6 h-6 text-slate-700 dark:text-slate-300" />
-//                             </div>
-//                             <h3 className="text-xl font-bold mb-4 dark:text-white">Cloud & Ops</h3>
-//                             <ul className="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> AWS / Azure / GCP</li>
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> Docker & Kubernetes</li>
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> Terraform (IaC)</li>
-//                                 <li className="flex items-center gap-2"><div className="w-1 h-1 bg-accent rounded-full"></div> CI/CD Pipelines</li>
-//                             </ul>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 {/* --- DEVELOPER EXPERIENCE (New) --- */}
-//                 <div className="mb-24 bg-slate-900 rounded-[3rem] p-12 md:p-16 text-white overflow-hidden relative">
-//                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-//                         <div>
-//                             <h2 className="text-3xl font-display font-bold mb-6">Built for Developers</h2>
-//                             <p className="text-slate-400 mb-8 leading-relaxed">
-//                                 Our SDKs are designed for developer happiness. Integrate powerful AI capabilities in minutes with our well-documented, type-safe libraries.
-//                             </p>
-//                             <div className="flex gap-4">
-//                                 <button className="px-6 py-3 bg-white text-slate-900 rounded-full font-bold text-sm hover:bg-slate-200 transition-colors">Read the Docs</button>
-//                                 <button className="px-6 py-3 border border-white/20 text-white rounded-full font-bold text-sm hover:bg-white/10 transition-colors">View on GitHub</button>
-//                             </div>
-//                         </div>
-//                         <div className="bg-[#1e1e1e] rounded-xl p-6 font-mono text-xs shadow-2xl border border-white/10">
-//                             <div className="flex gap-2 mb-4">
-//                                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
-//                                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-//                                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
-//                             </div>
-//                             <div className="space-y-1">
-//                                 <p><span className="text-purple-400">import</span> <span className="text-blue-400">{`{ JGAgent }`}</span> <span className="text-purple-400">from</span> <span className="text-green-400">'@jg-ai/sdk'</span>;</p>
-//                                 <p>&nbsp;</p>
-//                                 <p><span className="text-purple-400">const</span> client = <span className="text-purple-400">new</span> <span className="text-yellow-400">JGAgent</span>({`{`}</p>
-//                                 <p>&nbsp;&nbsp;apiKey: <span className="text-green-400">process.env.JG_API_KEY</span>,</p>
-//                                 <p>{`}`});</p>
-//                                 <p>&nbsp;</p>
-//                                 <p><span className="text-gray-500">// Deploy a new autonomous agent</span></p>
-//                                 <p><span className="text-purple-400">const</span> agent = <span className="text-purple-400">await</span> client.agents.<span className="text-blue-400">create</span>({`{`}</p>
-//                                 <p>&nbsp;&nbsp;name: <span className="text-green-400">'MarketAnalyst'</span>,</p>
-//                                 <p>&nbsp;&nbsp;model: <span className="text-green-400">'jg-enterprise-v2'</span>,</p>
-//                                 <p>&nbsp;&nbsp;capabilities: [<span className="text-green-400">'web_search'</span>, <span className="text-green-400">'data_analysis'</span>]</p>
-//                                 <p>{`}`});</p>
-//                                 <p>&nbsp;</p>
-//                                 <p><span className="text-purple-400">console</span>.<span className="text-blue-400">log</span>(<span className="text-green-400">`Agent deployed at ${`{agent.url}`}!`</span>);</p>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 {/* --- SECURITY & COMPLIANCE (New) --- */}
-//                 <div className="mb-24">
-//                     <h2 className="text-3xl font-display font-bold text-primary dark:text-white mb-12 text-center">Security & Compliance</h2>
-//                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-//                         {["HIPAA Compliant", "Secure Infrastructure"].map((item, i) => (
-//                             <div key={i} className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-8 flex flex-col items-center justify-center text-center hover:border-green-500 hover:bg-green-50 dark:hover:bg-slate-700 transition-colors cursor-default">
-//                                 <ShieldLockIcon className="w-8 h-8 text-slate-400 mb-4" />
-//                                 <span className="font-bold text-slate-800 dark:text-white">{item}</span>
-//                             </div>
-//                         ))}
-//                     </div>
-//                 </div>
-
-//                 {/* --- ENTERPRISE SCALE (New) --- */}
-//                 <div className="bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 pt-20">
-//                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-//                         <div>
-//                             <h3 className="text-4xl font-bold text-primary mb-2">99.99%</h3>
-//                             <p className="text-slate-500 dark:text-slate-400 text-sm">Uptime SLA for Enterprise</p>
-//                         </div>
-//                         <div>
-//                             <h3 className="text-4xl font-bold text-primary mb-2">24/7</h3>
-//                             <p className="text-slate-500 dark:text-slate-400 text-sm">Global Support & Engineering</p>
-//                         </div>
-//                         <div>
-//                             <h3 className="text-4xl font-bold text-primary mb-2">Multi-Region</h3>
-//                             <p className="text-slate-500 dark:text-slate-400 text-sm">Data Residency Options</p>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 {/* --- INTEGRATION PARTNERS --- */}
-//                 <div className="text-center mt-24">
-//                     <p className="text-sm font-mono text-slate-400 mb-8 uppercase tracking-widest">Integration Partners</p>
-//                     <div className="flex flex-wrap justify-center gap-12 opacity-50 grayscale">
-//                         <span className="text-2xl font-display font-bold">OpenAI</span>
-//                         <span className="text-2xl font-display font-bold">Google Cloud</span>
-//                         <span className="text-2xl font-display font-bold">Microsoft</span>
-//                         <span className="text-2xl font-display font-bold">AWS</span>
-//                         <span className="text-2xl font-display font-bold">NVIDIA</span>
-//                     </div>
-//                 </div>
-
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default PlatformPage;
-
 import React from 'react';
 import {
     StorefrontIcon, BoltIcon, UserGroupIcon, ServerStackIcon,
-    ShieldLockIcon, CloudArrowUpIcon, CodeBracketIcon, RobotIcon
+    ShieldLockIcon, CloudArrowUpIcon, CodeBracketIcon, RobotIcon,
+    ArrowRightIcon, CheckIcon
 } from './Icons';
 
-const PlatformPage: React.FC = () => {
-    const features = [
-        {
-            icon: BoltIcon,
-            title: "Smart Agent Listing",
-            description: "List your proprietary AI models and agents with detailed performance metrics and competitive pricing.",
-        },
-        {
-            icon: StorefrontIcon,
-            title: "Secure Transactions",
-            description: "A trusted and secure escrow system for buying and selling AI agents, ensuring fair trades.",
-        },
-        {
-            icon: UserGroupIcon,
-            title: "Global Ecosystem",
-            description: "Connect with developers, researchers, and enterprises worldwide to monetize and acquire cutting-edge AI.",
-        },
-    ];
+const platforms = [
+    { n: '01', title: 'The AI Agent Workplace', desc: 'Buy, sell and trade intelligent AI agents in the open marketplace for proprietary machine learning models.', tag: 'Marketplace', url: 'https://agenthub.jgdeveloper.com/', featured: true },
+    { n: '02', title: 'AI Agent For Website', desc: 'A live AI assistant you can drop into any website. Try the working demo instantly.', tag: 'Demo', url: 'https://jgai-demo.netlify.app/' },
+    { n: '03', title: 'AI Stock Platform', desc: 'AI-powered market intelligence and analytics for stocks, live and interactive.', tag: 'Fintech', url: 'https://jd-markets.netlify.app/' },
+    { n: '04', title: 'AI Real Estate Platform', desc: 'Intelligent property discovery and analytics powered by AI.', tag: 'PropTech', url: 'https://jg-ai-estate.vercel.app/' },
+    { n: '05', title: 'AI Rewards System', desc: 'A smart loyalty and rewards kiosk platform built for retailers. Try the live demo store.', tag: 'Retail', url: 'https://jg-rewards.vercel.app/kiosk?b=demo' },
+];
 
+const marketplaceFeatures = [
+    { icon: BoltIcon, title: 'Smart Agent Listing', description: 'List proprietary AI models and agents with detailed performance metrics and competitive pricing.' },
+    { icon: StorefrontIcon, title: 'Secure Transactions', description: 'A trusted escrow system for buying and selling AI agents, ensuring fair trades every time.' },
+    { icon: UserGroupIcon, title: 'Global Ecosystem', description: 'Connect with developers, researchers, and enterprises worldwide to monetize cutting-edge AI.' },
+];
+
+const PlatformPage: React.FC = () => {
     return (
         <div className="w-full min-h-screen pt-32 pb-20 bg-white dark:bg-slate-950">
             <div className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 animate-fade-up">
 
-                {/* SECTION 1: WORKPLACE HERO (PRIORITY) */}
-                <section className="mb-24 text-center max-w-4xl mx-auto">
-                    <h1 className="text-5xl md:text-7xl font-display text-primary dark:text-white mb-8 tracking-tight">
-                        The AI Agent Workplace
-                    </h1>
-                    <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 leading-relaxed">
-                        Buy, sell, and trade intelligent AI agents in the world's first open marketplace for proprietary machine learning models.
-                    </p>
-                    <div className="mt-10 flex flex-wrap justify-center gap-4">
-                        <button
-                            onClick={() => {
-                                window.open('https://agenthub.jgdeveloper.com/', '_blank', 'noopener,noreferrer');
-                            }}
-                            className="bg-primary text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-primary/90 transition-all shadow-xl hover:scale-105"
-                        >
-                            Explore Marketplace
-                        </button>
-
-                        {/* <button className="border-2 border-slate-200 dark:border-slate-700 px-10 py-4 rounded-full text-lg font-bold dark:text-white hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
-                            List an Agent
-                        </button> */}
+                {/* ============ HERO: SPLIT LAYOUT ============ */}
+                <section className="mb-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent mb-6">// JGAI Platform Suite</p>
+                        <h1 className="text-5xl md:text-6xl xl:text-7xl font-display text-primary dark:text-white mb-8 tracking-tight leading-[1.05]">
+                            One Platform.<br />Five Live Products.
+                        </h1>
+                        <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-10 max-w-xl">
+                            From the world's first open AI agent marketplace to retail rewards kiosks, every product below is in production and ready to use right now.
+                        </p>
+                        <div className="flex flex-wrap gap-4">
+                            <a
+                                href="https://agenthub.jgdeveloper.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-primary text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:scale-105 inline-flex items-center gap-2"
+                            >
+                                Explore Marketplace <ArrowRightIcon className="w-4 h-4" />
+                            </a>
+                            <a
+                                href="https://jgai-demo.netlify.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-full font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm"
+                            >
+                                Try Live Demo
+                            </a>
+                        </div>
+                        <dl className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 max-w-md">
+                            {[
+                                { v: '5', l: 'Live Platforms' },
+                                { v: '37+', l: 'Countries' },
+                                { v: '24/7', l: 'Uptime Ops' },
+                            ].map((s, i) => (
+                                <div key={i}>
+                                    <dd className="font-display font-bold text-3xl text-primary dark:text-white">{s.v}</dd>
+                                    <dt className="font-mono text-[10px] uppercase tracking-widest text-slate-400 mt-1">{s.l}</dt>
+                                </div>
+                            ))}
+                        </dl>
+                    </div>
+                    <div className="aspect-video bg-slate-100 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 overflow-hidden shadow-2xl group relative">
+                        <img
+                            src="/agenthub_preview.png"
+                            alt="AI Agent Marketplace Preview"
+                            loading="lazy"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-4 py-2 rounded-full font-mono text-[10px] uppercase tracking-widest text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            agenthub.jgdeveloper.com
+                        </div>
                     </div>
                 </section>
 
-                {/* SECTION 1.5: OUR PLATFORMS */}
+                {/* ============ PLATFORMS: FEATURED + GRID ============ */}
                 <section className="mb-40">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-sm font-mono text-accent uppercase tracking-[0.3em] mb-4">Live Products</h2>
-                        <h3 className="text-4xl font-display font-bold text-primary dark:text-white mb-6">Our Platforms</h3>
-                        <p className="text-lg text-slate-600 dark:text-slate-400">
-                            Production AI platforms you can open and use right now. Built, deployed and operated by JGAI.
+                    <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+                        <div>
+                            <h2 className="text-sm font-mono text-accent uppercase tracking-[0.3em] mb-4">Live Products</h2>
+                            <h3 className="text-4xl md:text-5xl font-display font-bold text-primary dark:text-white">Our Platforms</h3>
+                        </div>
+                        <p className="text-slate-500 dark:text-slate-400 max-w-md md:text-right">
+                            Built, deployed and operated by JGAI. Click any card to open the live product.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {[
-                            { n: '01', title: 'The AI Agent Workplace', desc: 'Buy, sell and trade intelligent AI agents in the open marketplace for proprietary models.', tag: 'Marketplace', url: 'https://agenthub.jgdeveloper.com/' },
-                            { n: '02', title: 'AI Agent For Website', desc: 'A live AI assistant you can drop into any website. Try the working demo instantly.', tag: 'Demo', url: 'https://jgai-demo.netlify.app/' },
-                            { n: '03', title: 'AI Stock Platform', desc: 'AI-powered market intelligence and analytics for stocks, live and interactive.', tag: 'Fintech', url: 'https://jd-markets.netlify.app/' },
-                            { n: '04', title: 'AI Real Estate Platform', desc: 'Intelligent property discovery and analytics powered by AI.', tag: 'PropTech', url: 'https://jg-ai-estate.vercel.app/' },
-                            { n: '05', title: 'AI Rewards System', desc: 'A smart loyalty and rewards kiosk platform built for retailers. Try the live demo store.', tag: 'Retail', url: 'https://jg-rewards.vercel.app/kiosk?b=demo' },
-                        ].map((pf, i) => (
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                        {platforms.map((pf, i) => (
                             <a
                                 key={i}
                                 href={pf.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group relative p-10 bg-slate-50 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 hover:border-primary/40 hover:shadow-xl transition-all duration-300 block overflow-hidden"
+                                className={`group relative p-10 rounded-[2rem] border transition-all duration-300 block overflow-hidden ${pf.featured
+                                    ? 'md:col-span-2 bg-slate-900 dark:bg-slate-900 border-slate-800 hover:border-accent/50 text-white'
+                                    : 'bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-primary/40 hover:shadow-xl'
+                                    }`}
                             >
-                                <div className="absolute top-0 right-0 w-28 h-28 bg-primary/5 group-hover:bg-primary/10 rounded-bl-full transition-colors"></div>
-                                <div className="flex items-center justify-between mb-6">
-                                    <span className="font-mono text-sm text-primary dark:text-blue-400 font-bold">/ {pf.n}</span>
-                                    <span className="font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-blue-400 border border-primary/10">{pf.tag}</span>
+                                <div className={`absolute top-0 right-0 w-28 h-28 rounded-bl-full transition-colors ${pf.featured ? 'bg-accent/10 group-hover:bg-accent/20' : 'bg-primary/5 group-hover:bg-primary/10'}`}></div>
+                                <div className="flex items-center justify-between mb-8">
+                                    <span className={`font-mono text-sm font-bold ${pf.featured ? 'text-accent' : 'text-primary dark:text-blue-400'}`}>/ {pf.n}</span>
+                                    <span className={`font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full border ${pf.featured ? 'bg-accent/10 text-accent border-accent/20' : 'bg-primary/5 dark:bg-primary/20 text-primary dark:text-blue-400 border-primary/10'}`}>{pf.tag}</span>
                                 </div>
-                                <h4 className="text-2xl font-display font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary dark:group-hover:text-blue-400 transition-colors">{pf.title}</h4>
-                                <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">{pf.desc}</p>
-                                <span className="inline-flex items-center text-primary dark:text-blue-400 font-bold text-sm">
+                                <h4 className={`text-2xl font-display font-bold mb-3 transition-colors ${pf.featured ? 'text-white group-hover:text-accent' : 'text-slate-900 dark:text-white group-hover:text-primary dark:group-hover:text-blue-400'}`}>{pf.title}</h4>
+                                <p className={`text-sm leading-relaxed mb-8 ${pf.featured ? 'text-slate-400' : 'text-slate-500 dark:text-slate-400'}`}>{pf.desc}</p>
+                                <span className={`inline-flex items-center font-bold text-sm ${pf.featured ? 'text-accent' : 'text-primary dark:text-blue-400'}`}>
                                     Open Platform <span className="ml-2 group-hover:translate-x-2 transition-transform">&rarr;</span>
                                 </span>
                             </a>
                         ))}
+
+                        {/* CTA tile to fill the grid */}
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group p-10 rounded-[2rem] border-2 border-dashed border-slate-300 dark:border-slate-700 hover:border-primary flex flex-col items-center justify-center text-center transition-colors"
+                        >
+                            <span className="font-mono text-sm text-slate-400 mb-3">/ 06</span>
+                            <h4 className="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Your Platform Next</h4>
+                            <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">Custom AI platforms scoped and shipped for your business.</p>
+                            <span className="text-primary dark:text-blue-400 font-bold text-sm inline-flex items-center">Start a Project <span className="ml-2 group-hover:translate-x-2 transition-transform">&rarr;</span></span>
+                        </a>
                     </div>
                 </section>
 
-                {/* SECTION 2: MARKETPLACE DETAILS */}
+                {/* ============ MARKETPLACE FEATURES: HORIZONTAL ============ */}
                 <section className="mb-40">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="aspect-video bg-slate-100 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 overflow-hidden shadow-xl group relative">
-                            <img
-                                src="/agenthub_preview.png"
-                                alt="AI Agent Marketplace Preview"
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                        </div>
-
-                        <div>
-                            <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900 dark:text-white mb-6">
-                                Your Gateway to AI Commerce
-                            </h2>
-                            <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-10">
-                                Our platform empowers developers to **monetize** creations and allows enterprises to **instantly acquire** tailored agents for data analysis, automation, and beyond.
-                            </p>
-                            <div className="space-y-8">
-                                {features.map((feature, i) => (
-                                    <div key={i} className="flex gap-5">
-                                        <div className="w-12 h-12 rounded-2xl bg-primary/5 dark:bg-primary/20 flex items-center justify-center flex-shrink-0 border border-primary/10">
-                                            <feature.icon className="w-6 h-6 text-primary" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-xl dark:text-white">{feature.title}</h4>
-                                            <p className="text-slate-500 dark:text-slate-400">{feature.description}</p>
-                                        </div>
-                                    </div>
-                                ))}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {marketplaceFeatures.map((feature, i) => (
+                            <div key={i} className="p-8 bg-white dark:bg-slate-800/50 rounded-3xl border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-colors">
+                                <div className="w-12 h-12 rounded-2xl bg-primary/5 dark:bg-primary/20 flex items-center justify-center border border-primary/10 mb-6">
+                                    <feature.icon className="w-6 h-6 text-primary" />
+                                </div>
+                                <h4 className="font-bold text-xl dark:text-white mb-2">{feature.title}</h4>
+                                <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">{feature.description}</p>
                             </div>
-                        </div>
+                        ))}
                     </div>
                 </section>
 
-                <hr className="border-slate-100 dark:border-slate-800 mb-32" />
-
-                {/* SECTION 3: PLATFORM ARCHITECTURE (THE "HOW") */}
+                {/* ============ ARCHITECTURE ============ */}
                 <section className="mb-32">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-sm font-mono text-accent uppercase tracking-[0.3em] mb-4">Enterprise Infrastructure</h2>
-                        <h3 className="text-4xl font-display font-bold text-primary dark:text-white mb-6">
-                            Powered by a Robust Platform
-                        </h3>
-                        <p className="text-lg text-slate-600 dark:text-slate-400">
-                            The Marketplace is backed by a modular, micro-services architecture designed for infinite scale and military-grade security.
-                        </p>
-                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-slate-50 dark:bg-slate-900/50 rounded-[3rem] border border-slate-200 dark:border-slate-800 p-10 md:p-14">
+                        <div className="lg:col-span-5">
+                            <h2 className="text-sm font-mono text-accent uppercase tracking-[0.3em] mb-4">Enterprise Infrastructure</h2>
+                            <h3 className="text-4xl font-display font-bold text-primary dark:text-white mb-6">
+                                Powered by a Robust Platform
+                            </h3>
+                            <p className="text-lg text-slate-600 dark:text-slate-400 mb-8">
+                                Every product runs on the same modular, micro-services architecture designed for infinite scale and enterprise-grade security.
+                            </p>
+                            <ul className="space-y-4">
+                                {[
+                                    { icon: ServerStackIcon, t: 'Modular micro-services' },
+                                    { icon: RobotIcon, t: 'Agent orchestration' },
+                                    { icon: ShieldLockIcon, t: 'Enterprise security' },
+                                    { icon: CodeBracketIcon, t: 'Developer SDKs' },
+                                    { icon: CloudArrowUpIcon, t: 'Multi-region cloud, 99.99% uptime' },
+                                ].map((item, idx) => (
+                                    <li key={idx} className="flex items-center gap-4">
+                                        <div className="w-9 h-9 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center flex-shrink-0">
+                                            <item.icon className="w-4 h-4 text-primary" />
+                                        </div>
+                                        <span className="font-medium text-slate-800 dark:text-slate-200">{item.t}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                        {/* Diagram */}
-                        <div className="lg:col-span-7 bg-slate-50 dark:bg-slate-900/50 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 p-10">
-
+                        <div className="lg:col-span-7">
                             <div className="relative space-y-6 max-w-md mx-auto">
                                 <div className="flex justify-center gap-4">
                                     <div className="px-5 py-2 bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700 font-mono text-[10px] dark:text-slate-400">Client Apps</div>
-                                    <div className="px-5 py-2 bg-primary text-white rounded-lg shadow-sm font-mono text-[10px] font-bold">Workplace API</div>
+                                    <div className="px-5 py-2 bg-primary text-white rounded-lg shadow-sm font-mono text-[10px] font-bold">Platform API</div>
                                 </div>
                                 <div className="h-6 border-l-2 border-dashed border-slate-300 dark:border-slate-700 mx-auto w-0"></div>
                                 <div className="bg-slate-900 dark:bg-accent p-4 rounded-xl shadow-lg text-center text-white text-sm font-bold">
@@ -379,64 +190,44 @@ const PlatformPage: React.FC = () => {
                                         <div key={box} className="p-2 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 text-center text-[10px] font-bold dark:text-slate-300">{box}</div>
                                     ))}
                                 </div>
+                                <div className="h-6 border-l-2 border-dashed border-slate-300 dark:border-slate-700 mx-auto w-0"></div>
+                                <div className="p-4 bg-primary/90 rounded-xl text-center text-white text-sm font-bold">
+                                    AI Model Layer (LLMs &amp; Vision)
+                                </div>
                             </div>
                         </div>
-
-                        {/* Tech Stack Highlights */}
-                        <div className="lg:col-span-5 space-y-4">
-                            {[
-                                { icon: ServerStackIcon, title: "Modular Micro-services", color: "blue" },
-                                { icon: RobotIcon, title: "Agent Orchestration", color: "purple" },
-                                { icon: ShieldLockIcon, title: "Enterprise Security", color: "green" },
-                                { icon: CodeBracketIcon, title: "Developer SDKs", color: "orange" }
-                            ].map((item, idx) => (
-                                <div key={idx} className="flex items-center gap-4 p-5 bg-white dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-colors">
-                                    <div className={`w-10 h-10 rounded-lg flex items-center justify-center bg-${item.color}-50 dark:bg-${item.color}-900/20`}>
-                                        <item.icon className={`w-5 h-5 text-${item.color}-600`} />
-                                    </div>
-                                    <span className="font-bold text-slate-800 dark:text-white">{item.title}</span>
-                                </div>
-                            ))}
-                        </div>
                     </div>
                 </section>
 
-                {/* SECTION 4: DEVELOPER EXPERIENCE & SECURITY */}
-                <section className="mb-32 grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="p-8 bg-slate-50 dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800">
-                        <BoltIcon className="w-8 h-8 text-primary mb-4" />
-                        <h4 className="text-xl font-bold dark:text-white mb-2">AI & Data</h4>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">PostgreSQL, Pinecone Vector DB, and LangChain integration for high-speed agent retrieval.</p>
-                    </div>
-                    <div className="p-8 bg-slate-50 dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800">
-                        <CloudArrowUpIcon className="w-8 h-8 text-primary mb-4" />
-                        <h4 className="text-xl font-bold dark:text-white mb-2">Cloud Ops</h4>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">Multi-region Kubernetes clusters ensuring 99.99% uptime for global AI commerce.</p>
-                    </div>
-                    <div className="p-8 bg-slate-50 dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800">
-                        <ShieldLockIcon className="w-8 h-8 text-primary mb-4" />
-                        <h4 className="text-xl font-bold dark:text-white mb-2">Compliance</h4>
-                        <p className="text-sm text-slate-500 dark:text-slate-400">Secure and private infrastructure protecting proprietary model weights.</p>
-                    </div>
-                </section>
-
-                {/* FINAL CTA: CONVERGING BOTH */}
-                {/* <section className="text-center bg-primary dark:bg-indigo-950 rounded-[3.5rem] p-16 text-white shadow-2xl relative overflow-hidden">
+                {/* ============ FINAL CTA ============ */}
+                <section className="text-center bg-slate-900 dark:bg-slate-900 rounded-[3rem] p-14 md:p-20 text-white relative overflow-hidden">
+                    <div className="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
                     <div className="relative z-10">
                         <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Ready to scale with AI?</h2>
-                        <p className="text-primary-foreground/80 text-xl mb-10 max-w-2xl mx-auto">
-                            Whether you're building the next great agent or looking to deploy one, our workplace and platform provide everything you need.
+                        <p className="text-slate-300 text-xl mb-10 max-w-2xl mx-auto">
+                            Whether you deploy one of our platforms or commission your own, JGAI ships production AI, fast.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <button className="bg-white text-primary px-10 py-4 rounded-full text-lg font-bold hover:bg-slate-100 transition-colors">
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSeUTygTM3E4EtVAzwCSFqN1Q60q2EKer7Vtme8admS9Xht9nA/viewform?usp=dialog"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white text-primary px-10 py-4 rounded-full text-lg font-bold hover:bg-slate-100 transition-colors"
+                            >
                                 Get Started Now
-                            </button>
-                            <button className="bg-transparent border border-white/30 px-10 py-4 rounded-full text-lg font-bold hover:bg-white/10 transition-colors">
-                                View Documentation
-                            </button>
+                            </a>
+                            <a
+                                href="https://agenthub.jgdeveloper.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-transparent border border-white/30 px-10 py-4 rounded-full text-lg font-bold hover:bg-white/10 transition-colors"
+                            >
+                                Explore Marketplace
+                            </a>
                         </div>
                     </div>
-                </section> */}
+                </section>
+
             </div>
         </div>
     );
