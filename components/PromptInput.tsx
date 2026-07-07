@@ -286,7 +286,7 @@ const PlatformPage: React.FC = () => {
                             { n: '01', title: 'The AI Agent Workplace', desc: 'Buy, sell and trade intelligent AI agents in the open marketplace for proprietary models.', tag: 'Marketplace', url: 'https://agenthub.jgdeveloper.com/' },
                             { n: '02', title: 'AI Agent For Website', desc: 'A live AI assistant you can drop into any website. Try the working demo instantly.', tag: 'Demo', url: 'https://jgai-demo.netlify.app/' },
                             { n: '03', title: 'AI Stock Platform', desc: 'AI-powered market intelligence and analytics for stocks, live and interactive.', tag: 'Fintech', url: 'https://jd-markets.netlify.app/' },
-                            { n: '04', title: 'AI Real Estate Platform', desc: 'Intelligent property discovery and analytics powered by AI.', tag: 'PropTech', url: 'https://jd-markets.netlify.app/' },
+                            { n: '04', title: 'AI Real Estate Platform', desc: 'Intelligent property discovery and analytics powered by AI.', tag: 'PropTech', url: 'https://jg-ai-estate.vercel.app/' },
                             { n: '05', title: 'AI Rewards System', desc: 'A smart loyalty and rewards kiosk platform built for retailers. Try the live demo store.', tag: 'Retail', url: 'https://jg-rewards.vercel.app/kiosk?b=demo' },
                         ].map((pf, i) => (
                             <a
