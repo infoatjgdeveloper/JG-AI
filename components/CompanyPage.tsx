@@ -1,128 +1,119 @@
 
 import React from 'react';
-import { MapPinIcon, UserCircleIcon } from './Icons';
+import { MapPinIcon, CheckIcon, ArrowRightIcon } from './Icons';
 import WorldMap from './WorldMap';
 import RegionCard from './RegionCard';
-import { REGIONAL_CARDS, REGIONAL_PARTNERS } from '../data/regionalPartners';
+import { REGIONAL_CARDS } from '../data/regionalPartners';
+
+const journey = [
+    { year: "2020", title: "Inception", desc: "Founded in Ahmedabad with a core team of 3 engineers focusing on Cloud Solutions." },
+    { year: "2021", title: "Expansion", desc: "Launched Enterprise Solutions division." },
+    { year: "2023", title: "The AI Pivot", desc: "Established AI Research Lab. Began development of proprietary Agentic Framework." },
+    { year: "2024", title: "Platform Launch", desc: "Released the JG AI Agents Marketplace (Beta)." },
+    { year: "2025", title: "Global Scale", desc: "Opening remote hubs in London and NYC. 10,000+ agents deployed. Authorised regional partnerships across the globe." },
+];
+
+const values = [
+    { title: "Innovation", desc: "We build with frontier technology, not last year's stack. Research flows directly into every product we ship." },
+    { title: "Excellence", desc: "500+ delivered projects and a 98% client retention rate. We hold ourselves to outcomes, not effort." },
+    { title: "Security", desc: "Security is engineered in from day one, backed by a dedicated cybersecurity entity, BRJU Infosec Inc." },
+    { title: "Collaboration", desc: "Scientists, engineers and strategists working as one team with our clients, across every timezone." },
+];
+
+const entities = [
+    { name: "JGAI HQ", region: "India", role: "AI research, engineering and global delivery" },
+    { name: "BRJU Infosec Inc.", region: "North America", role: "Cybersecurity, SOC and zero trust architecture" },
+    { name: "IA7 Global Tech", region: "Europe", role: "EU enterprise AI delivery and compliance" },
+];
 
 const CompanyPage: React.FC = () => {
     return (
         <div className="w-full min-h-screen pt-32 pb-20">
 
-            {/* --- HEADER --- */}
+            {/* ============ HERO ============ */}
             <div className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32 animate-fade-up">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 border-b border-slate-200 dark:border-slate-700 pb-20">
+                <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent mb-6">// About JGAI</p>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <h1 className="text-5xl md:text-7xl font-display text-primary dark:text-white leading-[1.05]">
+                        A Research Lab That Ships Products.
+                    </h1>
                     <div>
-                        <h1 className="text-5xl md:text-7xl font-display text-primary dark:text-white mb-8">
-                            Company
-                        </h1>
-                        <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-                            Founded in 2020, JG AI Research And Development Pvt Ltd is dedicated to delivering research-driven AI, secure cloud infrastructure and next-gen digital platforms. We bring together scientists, engineers and business strategists to solve your toughest challenges.
+                        <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+                            Founded in 2020, JG AI Research And Development Pvt Ltd delivers research-driven AI, secure cloud infrastructure and next-gen digital platforms. We bring together scientists, engineers and business strategists to solve your toughest challenges.
                         </p>
-                    </div>
-                    <div className="flex flex-col justify-end">
-                        <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl p-8">
-                            <div className="flex items-center gap-2 mb-4">
-                                <MapPinIcon className="w-5 h-5 text-primary dark:text-white" />
-                                <h3 className="font-bold text-primary dark:text-white">Headquarters</h3>
-                            </div>
-                            <p className="text-slate-600 dark:text-slate-400">
-                                Ahmedabad, Gujarat, India.<br />
-                                Serving clients globally.
-                            </p>
-                        </div>
+                        <dl className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                            {[
+                                { v: '2020', l: 'Founded' },
+                                { v: '3', l: 'Entities' },
+                                { v: '500+', l: 'Projects' },
+                                { v: '37+', l: 'Countries' },
+                            ].map((s, i) => (
+                                <div key={i} className="border-t-2 border-accent pt-3">
+                                    <dd className="font-display font-bold text-3xl text-primary dark:text-white">{s.v}</dd>
+                                    <dt className="font-mono text-[10px] uppercase tracking-widest text-slate-400 mt-1">{s.l}</dt>
+                                </div>
+                            ))}
+                        </dl>
                     </div>
                 </div>
             </div>
 
-            {/* --- OUR JOURNEY (Timeline - New) --- */}
+            {/* ============ ENTITIES + HQ ============ */}
+            <div className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="bg-slate-900 text-white rounded-3xl p-8">
+                        <div className="flex items-center gap-2 mb-4">
+                            <MapPinIcon className="w-5 h-5 text-accent" />
+                            <h3 className="font-bold">Headquarters</h3>
+                        </div>
+                        <p className="text-slate-300 text-sm leading-relaxed">
+                            Ahmedabad, Gujarat, India.<br />Serving clients globally.
+                        </p>
+                    </div>
+                    {entities.map((e, i) => (
+                        <div key={i} className="bg-slate-50 dark:bg-slate-800 rounded-3xl p-8 border border-slate-100 dark:border-slate-700 hover:border-accent/40 transition-colors">
+                            <p className="font-mono text-[10px] uppercase tracking-widest text-accent mb-3">{e.region}</p>
+                            <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-2">{e.name}</h3>
+                            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{e.role}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* ============ JOURNEY ============ */}
             <section className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32">
-                <h2 className="text-3xl font-display font-bold text-primary mb-16 dark:text-white">Our Journey</h2>
-                <div className="relative border-l-2 border-slate-200 dark:border-slate-700 ml-4 md:ml-8 space-y-12">
-                    {[
-                        { year: "2020", title: "Inception", desc: "Founded in Ahmedabad with a core team of 3 engineers focusing on Cloud Solutions." },
-                        { year: "2021", title: "Expansion", desc: "Launched Enterprise Solutions division." },
-                        { year: "2023", title: "The AI Pivot", desc: "Established AI Research Lab. Began development of proprietary Agentic Framework." },
-                        { year: "2024", title: "Platform Launch", desc: "Released the JG AI Agents Marketplace (Beta)" },
-                        { year: "2025", title: "Global Scale", desc: "Opening remote hubs in London & NYC. 10,000+ Agents deployed. Authorised regional partnerships across globe." }
-                    ].map((item, i) => (
-                        <div key={i} className="relative pl-8 md:pl-12">
-                            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white dark:bg-slate-900 border-4 border-accent"></div>
-                            <span className="text-sm font-mono font-bold text-accent mb-1 block">{item.year}</span>
-                            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{item.title}</h3>
-                            <p className="text-slate-500 dark:text-slate-400 max-w-xl">{item.desc}</p>
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold text-primary dark:text-white">Our Journey</h2>
+                    <p className="font-mono text-xs uppercase tracking-widest text-slate-400">2020, Present</p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6">
+                    {journey.map((item, i) => (
+                        <div key={i} className="relative p-8 bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-slate-700 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+                            <span className="inline-block font-mono text-sm font-bold text-white bg-accent px-3 py-1 rounded-full mb-5">{item.year}</span>
+                            <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">{item.title}</h3>
+                            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{item.desc}</p>
+                            {i < journey.length - 1 && (
+                                <ArrowRightIcon className="hidden xl:block absolute -right-5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-300 dark:text-slate-600" />
+                            )}
                         </div>
                     ))}
                 </div>
             </section>
 
-            {/* --- TEAM --- */}
-            {/* <section className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32">
-                <h2 className="text-sm font-mono text-slate-400 mb-12 uppercase tracking-widest">Leadership Team</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                        <UserCircleIcon className="w-16 h-16 text-slate-300 mb-6" />
-                        <h3 className="text-xl font-bold text-slate-900 dark:text-white">Jay G.</h3>
-                        <p className="text-accent font-bold text-sm mb-4">Founder & CEO</p>
-                        <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                            Visionary leader driving the strategic direction of JG AI towards future technologies.
-                        </p>
-                    </div>
-                    <div className="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                        <UserCircleIcon className="w-16 h-16 text-slate-300 mb-6" />
-                        <h3 className="text-xl font-bold text-slate-900 dark:text-white">Head of AI</h3>
-                        <p className="text-accent font-bold text-sm mb-4">CTO</p>
-                        <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                            Leading our research initiatives and platform architecture.
-                        </p>
-                    </div>
-                    <div className="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                        <UserCircleIcon className="w-16 h-16 text-slate-300 mb-6" />
-                        <h3 className="text-xl font-bold text-slate-900 dark:text-white">Head of Engineering</h3>
-                        <p className="text-accent font-bold text-sm mb-4">VP Engineering</p>
-                        <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                            Overseeing global delivery and infrastructure scalability.
-                        </p>
-                    </div>
-                </div>
-            </section> */}
-
-            {/* --- ADVISORY BOARD (New) --- */}
-            {/* <section className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16 mb-32">
-                <h2 className="text-sm font-mono text-slate-400 mb-12 uppercase tracking-widest">Advisory Board</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {[
-                        { name: "Dr. Sarah Chen", role: "AI Ethics Advisor", bio: "Former Ethics Lead at DeepMind" },
-                        { name: "Mark Russo", role: "Enterprise Sales", bio: "Ex-SVP Sales at Salesforce" },
-                        { name: "Elena K.", role: "Security Advisor", bio: "CISO at FinTech Global" },
-                        { name: "David Park", role: "Product Strategy", bio: "Product Lead at Google Cloud" }
-                    ].map((advisor, i) => (
-                        <div key={i} className="flex flex-col p-6 bg-slate-50 dark:bg-slate-800 rounded-2xl">
-                            <div className="font-bold text-slate-900 dark:text-white">{advisor.name}</div>
-                            <div className="text-xs font-bold text-primary mb-2 uppercase">{advisor.role}</div>
-                            <div className="text-sm text-slate-500 dark:text-slate-400">{advisor.bio}</div>
-                        </div>
-                    ))}
-                </div>
-            </section> */}
-
-            {/* --- GLOBAL OPERATIONAL NETWORK --- */}
-            <section className="bg-slate-900 text-white py-24 mb-16 rounded-[3rem] mx-4 md:mx-8 lg:mx-16 relative overflow-hidden">
+            {/* ============ GLOBAL NETWORK ============ */}
+            <section className="bg-slate-900 text-white py-24 mb-32 rounded-[3rem] mx-4 md:mx-8 lg:mx-16 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <WorldMap />
                 </div>
-
                 <div className="relative z-10">
-                    {/* Global Operational Network Header */}
                     <section className="container mx-auto px-6 relative mb-16">
                         <div className="text-center mb-16">
+                            <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent mb-4">// One Network, Three Entities</p>
                             <h2 className="text-4xl font-bold text-white mb-4">Global Operational Network</h2>
                             <p className="text-slate-500 uppercase tracking-widest text-xs">Decentralized Service Delivery through Centralized Governance</p>
                         </div>
                         <WorldMap />
                     </section>
-
-                    {/* Regional Partners */}
                     <section className="container mx-auto px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 max-w-7xl mx-auto">
                             {REGIONAL_CARDS.map((partner) => (
@@ -133,18 +124,29 @@ const CompanyPage: React.FC = () => {
                 </div>
             </section>
 
-            {/* --- VALUES --- */}
-            <section className="bg-primary text-white py-24">
-                <div className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16">
-                    <h2 className="text-3xl font-display mb-16">Our Values</h2>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {["Innovation", "Excellence", "Security", "Collaboration"].map((val, i) => (
-                            <div key={i} className="p-6 border border-white/20 rounded-2xl">
-                                <h3 className="text-xl font-bold mb-2">{val}</h3>
-                                <p className="text-white/60 text-sm">Core to our DNA and every project we undertake.</p>
-                            </div>
-                        ))}
+            {/* ============ VALUES ============ */}
+            <section className="max-w-[90rem] mx-auto px-4 md:px-8 lg:px-16">
+                <div className="bg-primary text-white rounded-[3rem] p-10 md:p-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                        <div>
+                            <h2 className="text-3xl md:text-4xl font-display mb-6">Our Values</h2>
+                            <p className="text-white/70 leading-relaxed">
+                                Four principles guide every project, every hire and every line of code at JGAI.
+                            </p>
+                        </div>
+                        <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            {values.map((val, i) => (
+                                <div key={i} className="p-6 border border-white/20 rounded-2xl hover:bg-white/5 transition-colors">
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                                            <CheckIcon className="w-4 h-4 text-accent" />
+                                        </div>
+                                        <h3 className="text-xl font-bold">{val.title}</h3>
+                                    </div>
+                                    <p className="text-white/60 text-sm leading-relaxed">{val.desc}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
