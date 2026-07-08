@@ -6,12 +6,12 @@ import {
 } from './Icons';
 
 const platforms = [
-    { n: '01', title: 'The AI Agent Workplace', desc: 'Buy, sell and trade intelligent AI agents in the open marketplace for proprietary machine learning models.', tag: 'Marketplace', url: 'https://agenthub.jgdeveloper.com/', featured: true },
-    { n: '02', title: 'AI Agent For Website', desc: 'A live AI assistant you can drop into any website. Try the working demo instantly.', tag: 'Demo', url: 'https://jgai-demo.netlify.app/' },
-    { n: '03', title: 'AI Stock Platform', desc: 'AI-powered market intelligence and analytics for stocks, live and interactive.', tag: 'Fintech', url: 'https://jd-markets.netlify.app/' },
-    { n: '04', title: 'AI Real Estate Platform', desc: 'Intelligent property discovery and analytics powered by AI.', tag: 'PropTech', url: 'https://jg-ai-estate.vercel.app/' },
-    { n: '05', title: 'AI Rewards System', desc: 'A smart loyalty and rewards kiosk platform built for retailers. Try the live demo store.', tag: 'Retail', url: 'https://jg-rewards.vercel.app/kiosk?b=demo' },
-    { n: '06', title: 'JGAI Learning', desc: 'The all-in-one AI university — course marketplace, AI-taught credit-hour programs, real Canvas classroom sync and verifiable certificates.', tag: 'EdTech', url: 'https://jgai-learning.vercel.app/' },
+    { n: '01', title: 'JGAI Bot', desc: 'AI chatbot for your website — trained on your own data, deployed and live in 48 hours. Try the working demo instantly.', tag: 'AI Chatbot', url: 'https://jgai-demo.netlify.app/', featured: true, accent: '#22d3ee' },
+    { n: '02', title: 'JGRewards', desc: 'A smart loyalty and rewards kiosk platform built for retailers. Try the live demo store.', tag: 'Retail', url: 'https://jg-rewards.vercel.app/kiosk?b=demo', accent: '#f59e0b' },
+    { n: '03', title: 'JG AgentHub', desc: 'Buy, sell and trade intelligent AI agents in the open marketplace for proprietary machine learning models.', tag: 'Marketplace', url: 'https://agenthub.jgdeveloper.com/', accent: '#8b5cf6' },
+    { n: '04', title: 'JD Markets', desc: 'AI-powered market intelligence and analytics for stocks, live and interactive. AI Trading enabled.', tag: 'Fintech', url: 'https://jd-markets.netlify.app/', accent: '#10b981' },
+    { n: '05', title: 'JGAI Learning', desc: 'The all-in-one AI university — course marketplace, AI-taught credit-hour programs, real Canvas classroom sync and verifiable certificates.', tag: 'EdTech', url: 'https://jgai-learning.vercel.app/', accent: '#2b6cff' },
+    { n: '06', title: 'JGAI Estate', desc: 'Intelligent property discovery and analytics powered by AI.', tag: 'PropTech', url: 'https://jg-ai-estate.vercel.app/', accent: '#ec4899' },
 ];
 
 const marketplaceFeatures = [
@@ -30,7 +30,7 @@ const PlatformPage: React.FC = () => {
                     <div>
                         <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent mb-6">// JGAI Platform Suite</p>
                         <h1 className="text-5xl md:text-6xl xl:text-7xl font-display text-primary dark:text-white mb-8 tracking-tight leading-[1.05]">
-                            One Platform.<br />Five Live Products.
+                            JGAI <span className="text-accent">Ecosystem</span>
                         </h1>
                         <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-10 max-w-xl">
                             From the world's first open AI agent marketplace to retail rewards kiosks, every product below is in production and ready to use right now.
@@ -98,19 +98,20 @@ const PlatformPage: React.FC = () => {
                                 href={pf.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`group relative p-10 rounded-[2rem] border transition-all duration-300 block overflow-hidden ${pf.featured
-                                    ? 'md:col-span-2 bg-slate-900 dark:bg-slate-900 border-slate-800 hover:border-accent/50 text-white'
-                                    : 'bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-primary/40 hover:shadow-xl'
+                                className={`group relative p-10 rounded-[2rem] border transition-all duration-300 block overflow-hidden hover:-translate-y-1.5 hover:shadow-2xl ${pf.featured
+                                    ? 'md:col-span-2 bg-slate-900 dark:bg-slate-900 border-slate-800 text-white'
+                                    : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800'
                                     }`}
                             >
-                                <div className={`absolute top-0 right-0 w-28 h-28 rounded-bl-full transition-colors ${pf.featured ? 'bg-accent/10 group-hover:bg-accent/20' : 'bg-primary/5 group-hover:bg-primary/10'}`}></div>
+                                <div className="absolute top-0 left-0 right-0 h-1.5" style={{ background: `linear-gradient(90deg, ${pf.accent}, transparent)` }}></div>
+                                <div className="absolute top-0 right-0 w-32 h-32 rounded-bl-full opacity-10 group-hover:opacity-25 transition-opacity" style={{ background: pf.accent }}></div>
                                 <div className="flex items-center justify-between mb-8">
-                                    <span className={`font-mono text-sm font-bold ${pf.featured ? 'text-accent' : 'text-primary dark:text-blue-400'}`}>/ {pf.n}</span>
-                                    <span className={`font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full border ${pf.featured ? 'bg-accent/10 text-accent border-accent/20' : 'bg-primary/5 dark:bg-primary/20 text-primary dark:text-blue-400 border-primary/10'}`}>{pf.tag}</span>
+                                    <span className="font-mono text-sm font-bold" style={{ color: pf.accent }}>/ {pf.n}</span>
+                                    <span className="font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full border" style={{ color: pf.accent, borderColor: `${pf.accent}44`, background: `${pf.accent}14` }}>{pf.tag}</span>
                                 </div>
                                 <h4 className={`text-2xl font-display font-bold mb-3 transition-colors ${pf.featured ? 'text-white group-hover:text-accent' : 'text-slate-900 dark:text-white group-hover:text-primary dark:group-hover:text-blue-400'}`}>{pf.title}</h4>
                                 <p className={`text-sm leading-relaxed mb-8 ${pf.featured ? 'text-slate-400' : 'text-slate-500 dark:text-slate-400'}`}>{pf.desc}</p>
-                                <span className={`inline-flex items-center font-bold text-sm ${pf.featured ? 'text-accent' : 'text-primary dark:text-blue-400'}`}>
+                                <span className="inline-flex items-center font-bold text-sm" style={{ color: pf.accent }}>
                                     Open Platform <span className="ml-2 group-hover:translate-x-2 transition-transform">&rarr;</span>
                                 </span>
                             </a>
