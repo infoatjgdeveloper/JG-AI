@@ -67,16 +67,14 @@ const PlatformPage: React.FC = () => {
                         </dl>
                     </div>
                     <a href="https://jgai-demo.netlify.app/" target="_blank" rel="noopener noreferrer" className="aspect-video bg-slate-100 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 overflow-hidden shadow-2xl group relative block">
-                        <iframe
-                            src="https://jgai-demo.netlify.app/"
-                            title="JGAI Bot live preview"
+                        <img
+                            src="/jgaibot_poster.png"
+                            alt="JGAI Bot — your website, answering. AI chatbot trained on your data, live in 48 hours."
                             loading="lazy"
-                            className="border-0 pointer-events-none origin-top-left"
-                            style={{ width: '200%', height: '200%', transform: 'scale(0.5)' }}
+                            className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                         />
-                        <div className="absolute inset-0" aria-hidden="true"></div>
                         <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-4 py-2 rounded-full font-mono text-[10px] uppercase tracking-widest text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                            JGAI Bot · live demo · jgai-demo.netlify.app
+                            Try the live demo →
                         </div>
                     </a>
                 </section>
