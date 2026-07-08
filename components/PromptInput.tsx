@@ -11,6 +11,7 @@ const platforms = [
     { n: '03', title: 'AI Stock Platform', desc: 'AI-powered market intelligence and analytics for stocks, live and interactive.', tag: 'Fintech', url: 'https://jd-markets.netlify.app/' },
     { n: '04', title: 'AI Real Estate Platform', desc: 'Intelligent property discovery and analytics powered by AI.', tag: 'PropTech', url: 'https://jg-ai-estate.vercel.app/' },
     { n: '05', title: 'AI Rewards System', desc: 'A smart loyalty and rewards kiosk platform built for retailers. Try the live demo store.', tag: 'Retail', url: 'https://jg-rewards.vercel.app/kiosk?b=demo' },
+    { n: '06', title: 'JGAI Learning', desc: 'The all-in-one AI university — course marketplace, AI-taught credit-hour programs, real Canvas classroom sync and verifiable certificates.', tag: 'EdTech', url: 'https://jgai-learning.vercel.app/' },
 ];
 
 const marketplaceFeatures = [
