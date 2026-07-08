@@ -123,7 +123,7 @@ const PlatformPage: React.FC = () => {
                             rel="noopener noreferrer"
                             className="group p-10 rounded-[2rem] border-2 border-dashed border-slate-300 dark:border-slate-700 hover:border-primary flex flex-col items-center justify-center text-center transition-colors"
                         >
-                            <span className="font-mono text-sm text-slate-400 mb-3">/ 06</span>
+                            <span className="font-mono text-sm text-slate-400 mb-3">/ 07</span>
                             <h4 className="text-xl font-display font-bold text-slate-900 dark:text-white mb-2">Your Platform Next</h4>
                             <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">Custom AI platforms scoped and shipped for your business.</p>
                             <span className="text-primary dark:text-blue-400 font-bold text-sm inline-flex items-center">Start a Project <span className="ml-2 group-hover:translate-x-2 transition-transform">&rarr;</span></span>
