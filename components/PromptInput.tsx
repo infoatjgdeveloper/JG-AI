@@ -6,11 +6,11 @@ import {
 } from './Icons';
 
 const platforms = [
-    { n: '01', title: 'JGAI Bot', desc: 'AI chatbot for your website — trained on your own data, deployed and live in 48 hours. Try the working demo instantly.', tag: 'AI Chatbot', url: 'https://jgai-demo.netlify.app/', featured: true, accent: '#22d3ee' },
+    { n: '01', title: 'JGAI Bot', desc: 'AI chatbot for your website, trained on your own data, deployed and live in 48 hours. Try the working demo instantly.', tag: 'AI Chatbot', url: 'https://jgai-demo.netlify.app/', featured: true, accent: '#22d3ee' },
     { n: '02', title: 'JGRewards', desc: 'A smart loyalty and rewards kiosk platform built for retailers. Try the live demo store.', tag: 'Retail', url: 'https://jg-rewards.vercel.app/kiosk?b=demo', accent: '#f59e0b' },
     { n: '03', title: 'JG AgentHub', desc: 'Buy, sell and trade intelligent AI agents in the open marketplace for proprietary machine learning models.', tag: 'Marketplace', url: 'https://agenthub.jgdeveloper.com/', accent: '#8b5cf6' },
     { n: '04', title: 'JD Markets', desc: 'AI-powered market intelligence and analytics for stocks, live and interactive. AI Trading enabled.', tag: 'Fintech', url: 'https://jd-markets.netlify.app/', accent: '#10b981' },
-    { n: '05', title: 'JGAI Learning', desc: 'The all-in-one AI university — course marketplace, AI-taught credit-hour programs, real Canvas classroom sync and verifiable certificates.', tag: 'EdTech', url: 'https://jgai-learning.vercel.app/', accent: '#2b6cff' },
+    { n: '05', title: 'JGAI Learning', desc: 'The all-in-one AI university: course marketplace, AI-taught credit-hour programs, real Canvas classroom sync and verifiable certificates.', tag: 'EdTech', url: 'https://jgai-learning.vercel.app/', accent: '#2b6cff' },
     { n: '06', title: 'JGAI Estate', desc: 'Intelligent property discovery and analytics powered by AI.', tag: 'PropTech', url: 'https://jg-ai-estate.vercel.app/', accent: '#ec4899' },
 ];
 
@@ -33,7 +33,7 @@ const PlatformPage: React.FC = () => {
                             JGAI <span className="text-accent">Ecosystem</span>
                         </h1>
                         <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-10 max-w-xl">
-                            From JGAI Bot — your website's AI assistant live in 48 hours — to marketplaces, fintech and the AI University, every product below is in production and ready to use right now.
+                            From JGAI Bot, your website's AI assistant live in 48 hours, to marketplaces, fintech and the AI University, every product below is in production and ready to use right now.
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <a
