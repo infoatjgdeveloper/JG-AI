@@ -33,29 +33,29 @@ const PlatformPage: React.FC = () => {
                             JGAI <span className="text-accent">Ecosystem</span>
                         </h1>
                         <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-10 max-w-xl">
-                            From the world's first open AI agent marketplace to retail rewards kiosks, every product below is in production and ready to use right now.
+                            From JGAI Bot — your website's AI assistant live in 48 hours — to marketplaces, fintech and the AI University, every product below is in production and ready to use right now.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <a
-                                href="https://agenthub.jgdeveloper.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-primary text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:scale-105 inline-flex items-center gap-2"
-                            >
-                                Explore Marketplace <ArrowRightIcon className="w-4 h-4" />
-                            </a>
                             <a
                                 href="https://jgai-demo.netlify.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="bg-primary text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:scale-105 inline-flex items-center gap-2"
+                            >
+                                Try JGAI Bot Live <ArrowRightIcon className="w-4 h-4" />
+                            </a>
+                            <a
+                                href="https://agenthub.jgdeveloper.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-full font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm"
                             >
-                                Try Live Demo
+                                Explore Marketplace
                             </a>
                         </div>
                         <dl className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 max-w-md">
                             {[
-                                { v: '5', l: 'Live Platforms' },
+                                { v: '6', l: 'Live Platforms' },
                                 { v: '37+', l: 'Countries' },
                                 { v: '24/7', l: 'Uptime Ops' },
                             ].map((s, i) => (
@@ -66,17 +66,19 @@ const PlatformPage: React.FC = () => {
                             ))}
                         </dl>
                     </div>
-                    <div className="aspect-video bg-slate-100 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 overflow-hidden shadow-2xl group relative">
-                        <img
-                            src="/agenthub_preview.png"
-                            alt="AI Agent Marketplace Preview"
+                    <a href="https://jgai-demo.netlify.app/" target="_blank" rel="noopener noreferrer" className="aspect-video bg-slate-100 dark:bg-slate-900 rounded-[2rem] border border-slate-200 dark:border-slate-800 overflow-hidden shadow-2xl group relative block">
+                        <iframe
+                            src="https://jgai-demo.netlify.app/"
+                            title="JGAI Bot live preview"
                             loading="lazy"
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            className="border-0 pointer-events-none origin-top-left"
+                            style={{ width: '200%', height: '200%', transform: 'scale(0.5)' }}
                         />
+                        <div className="absolute inset-0" aria-hidden="true"></div>
                         <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur px-4 py-2 rounded-full font-mono text-[10px] uppercase tracking-widest text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                            agenthub.jgdeveloper.com
+                            JGAI Bot · live demo · jgai-demo.netlify.app
                         </div>
-                    </div>
+                    </a>
                 </section>
 
                 {/* ============ PLATFORMS: FEATURED + GRID ============ */}
